@@ -1,0 +1,8 @@
+# optional heavier components — enable with env flags (see README)
+transformers>=4.46        # AERONEXUS_USE_HF_NER=1  (model from notebooks/01)
+sentence-transformers>=3  # AERONEXUS_USE_ST=1 (bge-small embeddings) and AERONEXUS_USE_NLI=1 (DeBERTa NLI verifier)
+torch>=2.3
+pdfplumber>=0.11          # /upload of real PDF drawings
+pytesseract>=0.3          # OCR fallback for scanned drawings (needs the tesseract binary)
+ultralytics>=8.3          # layout detector from notebooks/03
+joblib>=1.4               # price model from notebooks/04

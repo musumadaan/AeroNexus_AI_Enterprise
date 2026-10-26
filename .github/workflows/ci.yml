@@ -1,0 +1,110 @@
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency: { group: "ci-${{ github.ref }}", cancel-in-progress: true }
+permissions: { contents: read }
+
+jobs:
+  secrets-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Fail if a credential was committed (gitleaks, free for personal repos)
+        uses: gitleaks/gitleaks-action@v2
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+
+  backend:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        integrations: ["1", "0"]   # the new layer on, and switched off (must behave exactly like before)
+    defaults: { run: { working-directory: backend } }
+    env:
+      AERONEXUS_STATE_DB: ":memory:"
+      AERONEXUS_FF_INTEGRATIONS: ${{ matrix.integrations }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python scripts/generate_data.py --train 600
+      - name: Fetch public datasets (SHA-256 verified)
+        run: python scripts/fetch_public_data.py --only cmapss,ntsb
+      - uses: actions/cache@v4
+        with: { path: backend/models, key: "models-${{ hashFiles('backend/aeronexus/pdm/**', 'backend/aeronexus/safety/**', 'backend/aeronexus/public_data.py') }}" }
+      - name: Train models on public data (skipped when cached)
+        run: test -f models/pdm_FD004.joblib || python scripts/train_public_models.py
+      - name: Regression tests
+        run: |
+          if [ "$AERONEXUS_FF_INTEGRATIONS" = "1" ]; then pytest -q; else pytest -q --ignore=tests/test_integrations.py; fi
+      - name: AI evaluation gate (32 checks; blocks merge and deploy on any failure)
+        run: python -m aeronexus.evals.runner
+      - name: MCP server starts and lists its tools
+        if: matrix.integrations == '1'
+        run: |
+          python - <<'PY'
+          import asyncio
+          from mcp.client.client import Client
+          from mcp.client.stdio import StdioServerParameters
+          async def main():
+              async with Client(StdioServerParameters(command="python", args=["-m", "aeronexus.integrations.mcp_server"])) as c:
+                  names = sorted(t.name for t in (await c.list_tools()).tools)
+                  assert "sap_request_purchase_requisition" in names, names
+                  print("MCP tools:", names)
+          asyncio.run(main())
+          PY
+      - uses: actions/upload-artifact@v4
+        if: matrix.integrations == '1'
+        with: { name: eval-report, path: "backend/data/reports/" }
+
+  spark:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "17" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt -r requirements-spark.txt
+      - name: PySpark features match the pandas pipeline
+        run: 'AERONEXUS_STATE_DB=":memory:" pytest -q tests/test_spark_features.py'
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: frontend/package-lock.json }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  deploy-railway:
+    # incremental delivery: only main, only after every check above passed, only if a Railway token is configured
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [secrets-scan, backend, spark, frontend]
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      RAILWAY_SERVICE: ${{ vars.RAILWAY_SERVICE }}
+      PUBLIC_URL: ${{ vars.RAILWAY_PUBLIC_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy with the Railway CLI
+        run: |
+          if [ -z "$RAILWAY_TOKEN" ]; then echo "RAILWAY_TOKEN not set: skipping deploy"; exit 0; fi
+          npm install -g @railway/cli
+          railway up --ci ${RAILWAY_SERVICE:+--service "$RAILWAY_SERVICE"}
+      - name: Smoke test the deployment
+        if: env.PUBLIC_URL != ''
+        run: |
+          for i in $(seq 1 30); do curl -fsS "$PUBLIC_URL/health" && break; sleep 10; done
+          curl -fsS "$PUBLIC_URL/api/integrations/status" | python -c "import sys,json; d=json.load(sys.stdin); print([c['id'] for c in d['connectors'] if c['enabled']])"

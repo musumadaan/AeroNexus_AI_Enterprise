@@ -1,0 +1,9 @@
+.env
+.pytest_cache
+__pycache__
+data/state.db
+data/runs
+data/workflows
+data/mlflow.db
+data/reports/history
+data/integrations

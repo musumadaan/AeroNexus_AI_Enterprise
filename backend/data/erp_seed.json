@@ -1,0 +1,2278 @@
+{
+ "items": [
+  {
+   "code": "ASTMA36-1.6MM",
+   "description": "ASTM A36 plate 1.6 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "1.6 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "ASTMA36-2MM",
+   "description": "ASTM A36 plate 2 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "2 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "ASTMA36-3MM",
+   "description": "ASTM A36 plate 3 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "3 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "ASTMA36-3.5MM",
+   "description": "ASTM A36 plate 3.5 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "3.5 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "ASTMA36-4MM",
+   "description": "ASTM A36 plate 4 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "4 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "ASTMA36-5MM",
+   "description": "ASTM A36 plate 5 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "5 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "ASTMA36-6MM",
+   "description": "ASTM A36 plate 6 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "6 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "ASTMA36-8MM",
+   "description": "ASTM A36 plate 8 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "8 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "ASTMA36-10MM",
+   "description": "ASTM A36 plate 10 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "10 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "ASTMA36-12MM",
+   "description": "ASTM A36 plate 12 mm",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "12 mm",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "ASTMA36-16GA",
+   "description": "ASTM A36 sheet 16 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "16 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "ASTMA36-14GA",
+   "description": "ASTM A36 sheet 14 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "14 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "ASTMA36-12GA",
+   "description": "ASTM A36 sheet 12 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "12 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "ASTMA36-10GA",
+   "description": "ASTM A36 sheet 10 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "10 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "ASTMA36-8GA",
+   "description": "ASTM A36 sheet 8 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "8 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "ASTMA36-7GA",
+   "description": "ASTM A36 sheet 7 ga",
+   "material": "ASTM A36",
+   "material_class": "steel",
+   "thickness": "7 ga",
+   "density": 7.85,
+   "rate_per_kg": 1.95,
+   "on_hand_kg": 3000
+  },
+  {
+   "code": "2024-T3-1.6MM",
+   "description": "2024-T3 plate 1.6 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "1.6 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "2024-T3-2MM",
+   "description": "2024-T3 plate 2 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "2 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "2024-T3-3MM",
+   "description": "2024-T3 plate 3 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "3 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "2024-T3-3.5MM",
+   "description": "2024-T3 plate 3.5 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "3.5 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "2024-T3-4MM",
+   "description": "2024-T3 plate 4 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "4 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "2024-T3-5MM",
+   "description": "2024-T3 plate 5 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "5 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "2024-T3-6MM",
+   "description": "2024-T3 plate 6 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "6 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "2024-T3-8MM",
+   "description": "2024-T3 plate 8 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "8 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "2024-T3-10MM",
+   "description": "2024-T3 plate 10 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "10 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "2024-T3-12MM",
+   "description": "2024-T3 plate 12 mm",
+   "material": "2024-T3",
+   "material_class": "aluminum",
+   "thickness": "12 mm",
+   "density": 2.78,
+   "rate_per_kg": 7.2,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "7075-T6-1.6MM",
+   "description": "7075-T6 plate 1.6 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "1.6 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "7075-T6-2MM",
+   "description": "7075-T6 plate 2 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "2 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "7075-T6-3MM",
+   "description": "7075-T6 plate 3 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "3 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "7075-T6-3.5MM",
+   "description": "7075-T6 plate 3.5 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "3.5 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "7075-T6-4MM",
+   "description": "7075-T6 plate 4 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "4 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "7075-T6-5MM",
+   "description": "7075-T6 plate 5 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "5 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "7075-T6-6MM",
+   "description": "7075-T6 plate 6 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "6 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "7075-T6-8MM",
+   "description": "7075-T6 plate 8 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "8 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "7075-T6-10MM",
+   "description": "7075-T6 plate 10 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "10 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "7075-T6-12MM",
+   "description": "7075-T6 plate 12 mm",
+   "material": "7075-T6",
+   "material_class": "aluminum",
+   "thickness": "12 mm",
+   "density": 2.81,
+   "rate_per_kg": 8.9,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "6061-T6-1.6MM",
+   "description": "6061-T6 plate 1.6 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "1.6 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "6061-T6-2MM",
+   "description": "6061-T6 plate 2 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "2 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "6061-T6-3MM",
+   "description": "6061-T6 plate 3 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "3 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "6061-T6-3.5MM",
+   "description": "6061-T6 plate 3.5 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "3.5 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "6061-T6-4MM",
+   "description": "6061-T6 plate 4 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "4 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "6061-T6-5MM",
+   "description": "6061-T6 plate 5 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "5 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "6061-T6-6MM",
+   "description": "6061-T6 plate 6 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "6 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "6061-T6-8MM",
+   "description": "6061-T6 plate 8 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "8 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "6061-T6-10MM",
+   "description": "6061-T6 plate 10 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "10 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "6061-T6-12MM",
+   "description": "6061-T6 plate 12 mm",
+   "material": "6061-T6",
+   "material_class": "aluminum",
+   "thickness": "12 mm",
+   "density": 2.7,
+   "rate_per_kg": 6.9,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "TI-6AL-4V-1.6MM",
+   "description": "TI-6AL-4V plate 1.6 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "1.6 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "TI-6AL-4V-2MM",
+   "description": "TI-6AL-4V plate 2 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "2 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "TI-6AL-4V-3MM",
+   "description": "TI-6AL-4V plate 3 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "3 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "TI-6AL-4V-3.5MM",
+   "description": "TI-6AL-4V plate 3.5 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "3.5 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 250
+  },
+  {
+   "code": "TI-6AL-4V-4MM",
+   "description": "TI-6AL-4V plate 4 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "4 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "TI-6AL-4V-5MM",
+   "description": "TI-6AL-4V plate 5 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "5 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "TI-6AL-4V-6MM",
+   "description": "TI-6AL-4V plate 6 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "6 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "TI-6AL-4V-8MM",
+   "description": "TI-6AL-4V plate 8 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "8 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "TI-6AL-4V-10MM",
+   "description": "TI-6AL-4V plate 10 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "10 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "TI-6AL-4V-12MM",
+   "description": "TI-6AL-4V plate 12 mm",
+   "material": "TI-6AL-4V",
+   "material_class": "titanium",
+   "thickness": "12 mm",
+   "density": 4.43,
+   "rate_per_kg": 38.0,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "SS304-1.6MM",
+   "description": "SS 304 plate 1.6 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "1.6 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "SS304-2MM",
+   "description": "SS 304 plate 2 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "2 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "SS304-3MM",
+   "description": "SS 304 plate 3 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "3 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "SS304-3.5MM",
+   "description": "SS 304 plate 3.5 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "3.5 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 1500
+  },
+  {
+   "code": "SS304-4MM",
+   "description": "SS 304 plate 4 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "4 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "SS304-5MM",
+   "description": "SS 304 plate 5 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "5 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "SS304-6MM",
+   "description": "SS 304 plate 6 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "6 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 800
+  },
+  {
+   "code": "SS304-8MM",
+   "description": "SS 304 plate 8 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "8 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 4000
+  },
+  {
+   "code": "SS304-10MM",
+   "description": "SS 304 plate 10 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "10 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 0
+  },
+  {
+   "code": "SS304-12MM",
+   "description": "SS 304 plate 12 mm",
+   "material": "SS 304",
+   "material_class": "stainless",
+   "thickness": "12 mm",
+   "density": 8.0,
+   "rate_per_kg": 7.4,
+   "on_hand_kg": 1500
+  }
+ ],
+ "open_orders": [
+  {
+   "order_id": "SO-7100",
+   "part_number": "AX1000-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-01",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7102",
+   "part_number": "AX1002-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-03",
+   "status": "released"
+  },
+  {
+   "order_id": "SO-7104",
+   "part_number": "AX1004-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-05",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7106",
+   "part_number": "AX1006-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-07",
+   "status": "released"
+  },
+  {
+   "order_id": "SO-7108",
+   "part_number": "AX1008-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-09",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7110",
+   "part_number": "AX1010-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-11",
+   "status": "released"
+  },
+  {
+   "order_id": "SO-7112",
+   "part_number": "AX1012-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-13",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7114",
+   "part_number": "AX1014-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-15",
+   "status": "released"
+  },
+  {
+   "order_id": "SO-7116",
+   "part_number": "AX1016-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-17",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7118",
+   "part_number": "AX1018-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-19",
+   "status": "released"
+  },
+  {
+   "order_id": "SO-7120",
+   "part_number": "AX1020-B2",
+   "customer": "ACC-001",
+   "qty": 12,
+   "due": "2026-11-21",
+   "status": "in_production"
+  },
+  {
+   "order_id": "SO-7122",
+   "part_number": "AX1022-B2",
+   "customer": "ACC-003",
+   "qty": 12,
+   "due": "2026-11-23",
+   "status": "released"
+  }
+ ],
+ "purchase_orders": [
+  {
+   "po": "450100",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450101",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450102",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450103",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50,
+     "unit_price": 2.4
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450104",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450105",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450106",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450107",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450108",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450109",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100,
+     "unit_price": 85.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450110",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450111",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450112",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450113",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 5,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450114",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450115",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450116",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 10,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450117",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450118",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450119",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450120",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450121",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450122",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450123",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450124",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450125",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450126",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450127",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450128",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450129",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450130",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450131",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450132",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450133",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450134",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450135",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450136",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100,
+     "unit_price": 41.5
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450137",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450138",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450139",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  }
+ ],
+ "goods_receipts": [
+  {
+   "po": "450100",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450101",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450102",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450103",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450104",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450105",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 7
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 17
+    }
+   ]
+  },
+  {
+   "po": "450107",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450108",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450109",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450110",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450111",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450112",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450113",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450114",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 47
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "po": "450116",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 10
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450117",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450118",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450119",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450120",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450121",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450122",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450123",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 17
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 97
+    }
+   ]
+  },
+  {
+   "po": "450125",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450126",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450127",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450128",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450129",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450130",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450131",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450132",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 7
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 47
+    }
+   ]
+  },
+  {
+   "po": "450134",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450135",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450136",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450137",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450138",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450139",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  }
+ ],
+ "suppliers": [
+  {
+   "id": "SUP-01",
+   "name": "Prairie Aerospace Metals",
+   "materials": [
+    "2024-T3",
+    "7075-T6",
+    "6061-T6"
+   ],
+   "lead_days": 21,
+   "on_time": 0.94
+  },
+  {
+   "id": "SUP-02",
+   "name": "Rocky Mountain Titanium",
+   "materials": [
+    "TI-6AL-4V"
+   ],
+   "lead_days": 56,
+   "on_time": 0.81
+  },
+  {
+   "id": "SUP-03",
+   "name": "Foothills Steel & Stainless",
+   "materials": [
+    "ASTM A36",
+    "SS 304"
+   ],
+   "lead_days": 14,
+   "on_time": 0.97
+  }
+ ],
+ "work_orders": [
+  {
+   "wo": "WO-5100",
+   "part_number": "AX1000-B2",
+   "qty": 12,
+   "start": "2026-10-05",
+   "finish": "2026-11-03",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5102",
+   "part_number": "AX1002-B2",
+   "qty": 12,
+   "start": "2026-11-06",
+   "finish": "2026-12-04",
+   "status": "planned",
+   "wip_qty": 0
+  },
+  {
+   "wo": "WO-5104",
+   "part_number": "AX1004-B2",
+   "qty": 12,
+   "start": "2026-10-09",
+   "finish": "2026-11-07",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5106",
+   "part_number": "AX1006-B2",
+   "qty": 12,
+   "start": "2026-11-10",
+   "finish": "2026-12-08",
+   "status": "planned",
+   "wip_qty": 0
+  },
+  {
+   "wo": "WO-5108",
+   "part_number": "AX1008-B2",
+   "qty": 12,
+   "start": "2026-10-13",
+   "finish": "2026-11-11",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5110",
+   "part_number": "AX1010-B2",
+   "qty": 12,
+   "start": "2026-11-14",
+   "finish": "2026-12-12",
+   "status": "planned",
+   "wip_qty": 0
+  },
+  {
+   "wo": "WO-5112",
+   "part_number": "AX1012-B2",
+   "qty": 12,
+   "start": "2026-10-17",
+   "finish": "2026-11-15",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5114",
+   "part_number": "AX1014-B2",
+   "qty": 12,
+   "start": "2026-11-18",
+   "finish": "2026-12-16",
+   "status": "planned",
+   "wip_qty": 0
+  },
+  {
+   "wo": "WO-5116",
+   "part_number": "AX1016-B2",
+   "qty": 12,
+   "start": "2026-10-21",
+   "finish": "2026-11-19",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5118",
+   "part_number": "AX1018-B2",
+   "qty": 12,
+   "start": "2026-11-22",
+   "finish": "2026-12-20",
+   "status": "planned",
+   "wip_qty": 0
+  },
+  {
+   "wo": "WO-5120",
+   "part_number": "AX1020-B2",
+   "qty": 12,
+   "start": "2026-10-05",
+   "finish": "2026-11-03",
+   "status": "in_progress",
+   "wip_qty": 5
+  },
+  {
+   "wo": "WO-5122",
+   "part_number": "AX1022-B2",
+   "qty": 12,
+   "start": "2026-11-06",
+   "finish": "2026-12-04",
+   "status": "planned",
+   "wip_qty": 0
+  }
+ ],
+ "material_pos": [
+  {
+   "po": "MPO-8800",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 200,
+   "due": "2026-11-02",
+   "for_part": "AX1000-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8802",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 1200,
+   "due": "2026-11-04",
+   "for_part": "AX1002-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8803",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 500,
+   "due": "2026-11-05",
+   "for_part": "AX1003-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8805",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 200,
+   "due": "2026-11-07",
+   "for_part": "AX1005-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8806",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 1200,
+   "due": "2026-11-08",
+   "for_part": "AX1006-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8808",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 500,
+   "due": "2026-11-10",
+   "for_part": "AX1008-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8809",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 500,
+   "due": "2026-11-11",
+   "for_part": "AX1009-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8811",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 1200,
+   "due": "2026-11-13",
+   "for_part": "AX1011-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8812",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 1200,
+   "due": "2026-11-14",
+   "for_part": "AX1012-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8814",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 500,
+   "due": "2026-11-16",
+   "for_part": "AX1014-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8815",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 200,
+   "due": "2026-11-17",
+   "for_part": "AX1015-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8817",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 500,
+   "due": "2026-11-19",
+   "for_part": "AX1017-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8818",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 200,
+   "due": "2026-11-20",
+   "for_part": "AX1018-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8820",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 200,
+   "due": "2026-11-22",
+   "for_part": "AX1020-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8821",
+   "supplier": "SUP-03",
+   "material": "ASTM A36",
+   "kg": 200,
+   "due": "2026-11-23",
+   "for_part": "AX1021-B2",
+   "status": "open"
+  },
+  {
+   "po": "MPO-8823",
+   "supplier": "SUP-01",
+   "material": "7075-T6",
+   "kg": 200,
+   "due": "2026-11-25",
+   "for_part": "AX1023-B2",
+   "status": "open"
+  }
+ ],
+ "where_used": {
+  "AX1000-B2": [
+   "ASSY-100"
+  ],
+  "AX1001-B2": [
+   "ASSY-101",
+   "ASSY-201"
+  ],
+  "AX1002-B2": [
+   "ASSY-102",
+   "ASSY-202"
+  ],
+  "AX1003-B2": [
+   "ASSY-103"
+  ],
+  "AX1004-B2": [
+   "ASSY-104",
+   "ASSY-204"
+  ],
+  "AX1005-B2": [
+   "ASSY-105",
+   "ASSY-200"
+  ],
+  "AX1006-B2": [
+   "ASSY-106"
+  ],
+  "AX1007-B2": [
+   "ASSY-100",
+   "ASSY-202"
+  ],
+  "AX1008-B2": [
+   "ASSY-101",
+   "ASSY-203"
+  ],
+  "AX1009-B2": [
+   "ASSY-102"
+  ],
+  "AX1010-B2": [
+   "ASSY-103",
+   "ASSY-200"
+  ],
+  "AX1011-B2": [
+   "ASSY-104",
+   "ASSY-201"
+  ],
+  "AX1012-B2": [
+   "ASSY-105"
+  ],
+  "AX1013-B2": [
+   "ASSY-106",
+   "ASSY-203"
+  ],
+  "AX1014-B2": [
+   "ASSY-100",
+   "ASSY-204"
+  ],
+  "AX1015-B2": [
+   "ASSY-101"
+  ],
+  "AX1016-B2": [
+   "ASSY-102",
+   "ASSY-201"
+  ],
+  "AX1017-B2": [
+   "ASSY-103",
+   "ASSY-202"
+  ],
+  "AX1018-B2": [
+   "ASSY-104"
+  ],
+  "AX1019-B2": [
+   "ASSY-105",
+   "ASSY-204"
+  ],
+  "AX1020-B2": [
+   "ASSY-106",
+   "ASSY-200"
+  ],
+  "AX1021-B2": [
+   "ASSY-100"
+  ],
+  "AX1022-B2": [
+   "ASSY-101",
+   "ASSY-202"
+  ],
+  "AX1023-B2": [
+   "ASSY-102",
+   "ASSY-203"
+  ]
+ },
+ "finished_goods": {
+  "AX1000-B2": 0,
+  "AX1001-B2": 20,
+  "AX1002-B2": 20,
+  "AX1003-B2": 0,
+  "AX1004-B2": 0,
+  "AX1005-B2": 0,
+  "AX1006-B2": 20,
+  "AX1007-B2": 0,
+  "AX1008-B2": 6,
+  "AX1009-B2": 0,
+  "AX1010-B2": 20,
+  "AX1011-B2": 0,
+  "AX1012-B2": 20,
+  "AX1013-B2": 0,
+  "AX1014-B2": 0,
+  "AX1015-B2": 0,
+  "AX1016-B2": 20,
+  "AX1017-B2": 6,
+  "AX1018-B2": 0,
+  "AX1019-B2": 20,
+  "AX1020-B2": 0,
+  "AX1021-B2": 0,
+  "AX1022-B2": 0,
+  "AX1023-B2": 20
+ }
+}

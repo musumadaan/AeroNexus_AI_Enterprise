@@ -1,0 +1,407 @@
+[
+ [
+  "ASTM A36",
+  "is_a",
+  "steel"
+ ],
+ [
+  "ASTM A36",
+  "incompatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "ASTM A36",
+  "compatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "ASTM A36",
+  "incompatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "ASTM A36",
+  "compatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "2024-T3",
+  "is_a",
+  "aluminum"
+ ],
+ [
+  "2024-T3",
+  "compatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "2024-T3",
+  "compatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "2024-T3",
+  "incompatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "2024-T3",
+  "incompatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "7075-T6",
+  "is_a",
+  "aluminum"
+ ],
+ [
+  "7075-T6",
+  "compatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "7075-T6",
+  "compatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "7075-T6",
+  "incompatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "7075-T6",
+  "incompatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "6061-T6",
+  "is_a",
+  "aluminum"
+ ],
+ [
+  "6061-T6",
+  "compatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "6061-T6",
+  "compatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "6061-T6",
+  "incompatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "6061-T6",
+  "incompatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "TI-6AL-4V",
+  "is_a",
+  "titanium"
+ ],
+ [
+  "TI-6AL-4V",
+  "incompatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "TI-6AL-4V",
+  "compatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "TI-6AL-4V",
+  "incompatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "TI-6AL-4V",
+  "incompatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "SS 304",
+  "is_a",
+  "stainless"
+ ],
+ [
+  "SS 304",
+  "incompatible_coating",
+  "ANODIZE TYPE II PER MIL-A-8625"
+ ],
+ [
+  "SS 304",
+  "incompatible_coating",
+  "PRIME PER MIL-PRF-23377"
+ ],
+ [
+  "SS 304",
+  "compatible_coating",
+  "PASSIVATE PER AMS 2700"
+ ],
+ [
+  "SS 304",
+  "incompatible_coating",
+  "HOT-DIP GALVANIZED PER ASTM A123"
+ ],
+ [
+  "2024-T3",
+  "supplied_by",
+  "SUP-01"
+ ],
+ [
+  "7075-T6",
+  "supplied_by",
+  "SUP-01"
+ ],
+ [
+  "6061-T6",
+  "supplied_by",
+  "SUP-01"
+ ],
+ [
+  "TI-6AL-4V",
+  "supplied_by",
+  "SUP-02"
+ ],
+ [
+  "ASTM A36",
+  "supplied_by",
+  "SUP-03"
+ ],
+ [
+  "SS 304",
+  "supplied_by",
+  "SUP-03"
+ ],
+ [
+  "AX1000-B2",
+  "used_in",
+  "ASSY-100"
+ ],
+ [
+  "AX1001-B2",
+  "used_in",
+  "ASSY-101"
+ ],
+ [
+  "AX1001-B2",
+  "used_in",
+  "ASSY-201"
+ ],
+ [
+  "AX1002-B2",
+  "used_in",
+  "ASSY-102"
+ ],
+ [
+  "AX1002-B2",
+  "used_in",
+  "ASSY-202"
+ ],
+ [
+  "AX1003-B2",
+  "used_in",
+  "ASSY-103"
+ ],
+ [
+  "AX1004-B2",
+  "used_in",
+  "ASSY-104"
+ ],
+ [
+  "AX1004-B2",
+  "used_in",
+  "ASSY-204"
+ ],
+ [
+  "AX1005-B2",
+  "used_in",
+  "ASSY-105"
+ ],
+ [
+  "AX1005-B2",
+  "used_in",
+  "ASSY-200"
+ ],
+ [
+  "AX1006-B2",
+  "used_in",
+  "ASSY-106"
+ ],
+ [
+  "AX1007-B2",
+  "used_in",
+  "ASSY-100"
+ ],
+ [
+  "AX1007-B2",
+  "used_in",
+  "ASSY-202"
+ ],
+ [
+  "AX1008-B2",
+  "used_in",
+  "ASSY-101"
+ ],
+ [
+  "AX1008-B2",
+  "used_in",
+  "ASSY-203"
+ ],
+ [
+  "AX1009-B2",
+  "used_in",
+  "ASSY-102"
+ ],
+ [
+  "AX1010-B2",
+  "used_in",
+  "ASSY-103"
+ ],
+ [
+  "AX1010-B2",
+  "used_in",
+  "ASSY-200"
+ ],
+ [
+  "AX1011-B2",
+  "used_in",
+  "ASSY-104"
+ ],
+ [
+  "AX1011-B2",
+  "used_in",
+  "ASSY-201"
+ ],
+ [
+  "AX1012-B2",
+  "used_in",
+  "ASSY-105"
+ ],
+ [
+  "AX1013-B2",
+  "used_in",
+  "ASSY-106"
+ ],
+ [
+  "AX1013-B2",
+  "used_in",
+  "ASSY-203"
+ ],
+ [
+  "AX1014-B2",
+  "used_in",
+  "ASSY-100"
+ ],
+ [
+  "AX1014-B2",
+  "used_in",
+  "ASSY-204"
+ ],
+ [
+  "AX1015-B2",
+  "used_in",
+  "ASSY-101"
+ ],
+ [
+  "AX1016-B2",
+  "used_in",
+  "ASSY-102"
+ ],
+ [
+  "AX1016-B2",
+  "used_in",
+  "ASSY-201"
+ ],
+ [
+  "AX1017-B2",
+  "used_in",
+  "ASSY-103"
+ ],
+ [
+  "AX1017-B2",
+  "used_in",
+  "ASSY-202"
+ ],
+ [
+  "AX1018-B2",
+  "used_in",
+  "ASSY-104"
+ ],
+ [
+  "AX1019-B2",
+  "used_in",
+  "ASSY-105"
+ ],
+ [
+  "AX1019-B2",
+  "used_in",
+  "ASSY-204"
+ ],
+ [
+  "AX1020-B2",
+  "used_in",
+  "ASSY-106"
+ ],
+ [
+  "AX1020-B2",
+  "used_in",
+  "ASSY-200"
+ ],
+ [
+  "AX1021-B2",
+  "used_in",
+  "ASSY-100"
+ ],
+ [
+  "AX1022-B2",
+  "used_in",
+  "ASSY-101"
+ ],
+ [
+  "AX1022-B2",
+  "used_in",
+  "ASSY-202"
+ ],
+ [
+  "AX1023-B2",
+  "used_in",
+  "ASSY-102"
+ ],
+ [
+  "AX1023-B2",
+  "used_in",
+  "ASSY-203"
+ ],
+ [
+  "ANODIZE TYPE II PER MIL-A-8625",
+  "governed_by",
+  "MIL-A-8625"
+ ],
+ [
+  "PASSIVATE PER AMS 2700",
+  "governed_by",
+  "AMS 2700"
+ ],
+ [
+  "HOT-DIP GALVANIZED PER ASTM A123",
+  "governed_by",
+  "ASTM A123"
+ ],
+ [
+  "AWS D17.1",
+  "covers",
+  "AEROSPACE FUSION WELDING"
+ ],
+ [
+  "MIL-STD-130",
+  "covers",
+  "PART IDENTIFICATION MARKING"
+ ]
+]

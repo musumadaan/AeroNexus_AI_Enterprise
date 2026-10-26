@@ -1,0 +1,312 @@
+"""REST routes for the integration layer (mounted only when AERONEXUS_FF_INTEGRATIONS is on).
+
+  GET  /api/integrations/status            flags, connector health, Sheets mode, MCP connection hints
+  GET  /api/integrations/approvals         approval queue (pending + recent decisions) with age and payload
+  POST /api/integrations/approvals/{id}    approve / reject (approver role, named human, note goes to the audit log)
+  GET  /api/integrations/audit             tamper-evident audit log + chain verification
+  GET  /api/integrations/analytics         productivity analytics
+  GET  /api/integrations/runs              execution traces summary for the Mission Control dashboard
+  POST /api/integrations/procurement/demo  start the "Inspection → SAP requisition → Sheets" workflow for an engine
+  POST /api/integrations/sheets/test       queue a test row (approver/admin)
+  GET  /api/integrations/search            hybrid RAG search (used by the MCP server)
+  GET  /api/sap/...                        mock SAP procurement reads; POST requisitions are queued for approval
+"""
+from __future__ import annotations
+
+import os
+import time
+from dataclasses import asdict
+from typing import Any, Optional
+
+from fastapi import APIRouter, Depends, HTTPException, Request
+from pydantic import BaseModel, Field
+
+from ..security import Forbidden, Principal, principal_from_headers
+from .flags import catalog, mcp_enabled, sap_enabled, sheets_mode
+
+router = APIRouter()
+
+
+def principal(request: Request) -> Principal:
+    return principal_from_headers(request.headers)
+
+
+def need(p: Principal, perm: str) -> Principal:
+    try:
+        p.require(perm)
+    except Forbidden as exc:
+        raise HTTPException(403, str(exc))
+    return p
+
+
+def _rt() -> Any:
+    from ..services import services
+
+    return services().runtime
+
+
+def _sap() -> Any:
+    sap = getattr(_rt(), "sap", None)
+    if not sap_enabled() or sap is None:
+        raise HTTPException(404, "mock SAP connector is disabled (AERONEXUS_FF_SAP_MOCK=0)")
+    return sap
+
+
+@router.get("/api/integrations/status")
+def status() -> dict[str, Any]:
+    from .audit import audit_log
+    from .sheets import tracker
+
+    rt = _rt()
+    return {
+        "connectors": catalog(), "sheets": tracker.status(), "sap": _rt().sap.summary() if sap_enabled() and hasattr(rt, "sap") else None,
+        "audit": audit_log().verify(),
+        "mcp": {"enabled": mcp_enabled(), "command": "python -m aeronexus.integrations.mcp_server",
+                "http": "python -m aeronexus.integrations.mcp_server --http --port 8765",
+                "client_config": {"mcpServers": {"aeronexus": {"command": "python", "args": ["-m", "aeronexus.integrations.mcp_server"],
+                                                               "cwd": "<path>/aeronexus-ai/backend",
+                                                               "env": {"AERONEXUS_API_URL": "http://localhost:8000"}}}}},
+        "tools": sorted(t for t in rt.tools if t.startswith(("sap.", "sf.", "erp.", "crm.", "cmms.", "comms."))),
+        "salesforce": rt.salesforce.summary() if hasattr(rt, "salesforce") else {"mode": "off"},
+        "databricks": _databricks_status(),
+        "llm": _llm_status(),
+        "secrets": _secrets(),
+        "flags": {k: v for k, v in sorted(os.environ.items()) if k.startswith("AERONEXUS_FF_")},
+    }
+
+
+def _databricks_status() -> dict[str, Any]:
+    from ..pipelines.databricks import status as st
+
+    return st()
+
+
+def _llm_status() -> dict[str, Any]:
+    from ..llm import get_router
+
+    r = get_router()
+    return {"provider": r.provider_name, "small": r.small, "large": r.large, "circuit": r.breaker.state}
+
+
+def _secrets() -> list[dict[str, Any]]:
+    from .secrets import report
+
+    return report()
+
+
+def _approval_view(a: Any) -> dict[str, Any]:
+    d = asdict(a)
+    d["age_s"] = round(time.time() - a.created, 1)
+    d.pop("idempotency_key", None)
+    return d
+
+
+@router.get("/api/integrations/approvals")
+def approvals(p: Principal = Depends(principal)) -> dict[str, Any]:
+    need(p, "read")
+    q = sorted(_rt().queue.values(), key=lambda a: -a.created)
+    return {"pending": [_approval_view(a) for a in q if a.status == "pending"],
+            "decided": [_approval_view(a) for a in q if a.status != "pending"][:40]}
+
+
+class Decision(BaseModel):
+    approve: bool
+    note: str = Field(default="", max_length=500)
+
+
+@router.post("/api/integrations/approvals/{approval_id}")
+def decide(approval_id: str, d: Decision, p: Principal = Depends(principal)) -> dict[str, Any]:
+    need(p, "approve")
+    rt = _rt()
+    if approval_id not in rt.queue:
+        raise HTTPException(404, "no such approval")
+    item = rt.queue[approval_id]
+    if item.status != "pending":
+        raise HTTPException(409, f"already {item.status}")
+    item = rt.decide(approval_id, p.user, d.approve)
+    if d.note:
+        rt._log(p.user, "approval_note", approval_id=approval_id, tool=item.tool, note=d.note)
+    return _approval_view(item)
+
+
+@router.get("/api/integrations/audit")
+def audit(limit: int = 100, p: Principal = Depends(principal)) -> dict[str, Any]:
+    from .audit import audit_log
+
+    need(p, "read")
+    return {"verify": audit_log().verify(), "records": audit_log().records(min(limit, 500))[::-1]}
+
+
+@router.get("/api/integrations/analytics")
+def analytics_route(p: Principal = Depends(principal)) -> dict[str, Any]:
+    from .audit import analytics
+    from .sheets import tracker
+
+    need(p, "read")
+    return {**analytics(), "sheets": tracker.status(), "tracking_rows": tracker.recent_local(15) if sheets_mode() == "local" else []}
+
+
+@router.get("/api/integrations/runs")
+def runs(p: Principal = Depends(principal)) -> dict[str, Any]:
+    from ..orchestration.runs import store
+
+    need(p, "read")
+    rs = [r for r in store.list(None, p.tenant, 200) if r.kind in ("mission", "workflow")]
+    by_status: dict[str, int] = {}
+    by_name: dict[str, dict[str, int]] = {}
+    for r in rs:
+        by_status[r.status] = by_status.get(r.status, 0) + 1
+        n = by_name.setdefault(r.name, {"name": r.name, "runs": 0, "completed": 0, "failed": 0, "waiting": 0})
+        n["runs"] += 1
+        n["completed"] += r.status == "completed"
+        n["failed"] += r.status == "failed"
+        n["waiting"] += r.status == "waiting_approval"
+    return {"by_status": by_status, "by_workflow": sorted(by_name.values(), key=lambda x: -x["runs"])[:12],
+            "recent": [r.public(full=False) for r in rs[:25]]}
+
+
+class ProcureReq(BaseModel):
+    subset: str = "FD001"
+    unit: int = 20
+
+
+@router.post("/api/integrations/procurement/demo")
+def procurement_demo(req: ProcureReq, p: Principal = Depends(principal)) -> dict[str, Any]:
+    from ..orchestration.workflows import TEMPLATES, run_workflow
+
+    need(p, "run")
+    tpl = next((t for t in TEMPLATES if t["id"] == "tpl-procure"), None)
+    if tpl is None:
+        raise HTTPException(404, "procurement template not registered")
+    r = run_workflow(tpl, {"subset": req.subset, "unit": req.unit}, p, "live")
+    return {"run_id": r.id}
+
+
+@router.post("/api/integrations/sheets/test")
+def sheets_test(p: Principal = Depends(principal)) -> dict[str, Any]:
+    from .sheets import tracker
+
+    need(p, "approve")
+    tracker.track("connection_test", tool="sheets", actor=p.user or "unknown", status="ok", summary="AeroNexus test row")
+    tracker.flush(5)
+    return tracker.status()
+
+
+@router.get("/api/integrations/search")
+def search(q: str, k: int = 4) -> list[dict[str, Any]]:
+    from ..services import services
+
+    hits = services().index.search(q[:300], k=min(k, 8))
+    return [{"id": h.chunk.id, "title": h.chunk.meta.get("title"), "section": h.chunk.meta.get("section"),
+             "text": h.chunk.text[:500], "score": round(h.score, 4)} for h in hits]
+
+
+# ------------------------------------------------------------------ mock SAP (OData-like resource names)
+@router.get("/api/sap/suppliers")
+def sap_suppliers() -> list[dict[str, Any]]:
+    return _sap().list_suppliers()
+
+
+@router.get("/api/sap/materials")
+def sap_materials(query: str = "") -> list[dict[str, Any]]:
+    return _sap().list_materials(query)
+
+
+@router.get("/api/sap/purchase-orders")
+def sap_pos(status: str = "") -> list[dict[str, Any]]:
+    return _sap().list_purchase_orders(status)
+
+
+@router.get("/api/sap/purchase-requisitions")
+def sap_prs(status: str = "") -> list[dict[str, Any]]:
+    return _sap().list_requisitions(status)
+
+
+class PRRequest(BaseModel):
+    material: str
+    quantity: float = Field(gt=0, le=10000)
+    reason: str = Field(min_length=3, max_length=300)
+    delivery_days: Optional[int] = 14
+
+
+@router.post("/api/sap/purchase-requisitions")
+def sap_request_pr(req: PRRequest, p: Principal = Depends(principal)) -> dict[str, Any]:
+    """Anyone who can run workflows may *request* a requisition; it always waits for a named approver."""
+    need(p, "run")
+    _sap()
+    try:
+        return _rt().call("sap.create_purchase_requisition",
+                          {"material": req.material, "quantity": float(req.quantity), "reason": req.reason,
+                           "delivery_days": int(req.delivery_days or 14), "requested_by": p.user or "unknown", "source": "api"},
+                          actor=p.user or "unknown", module="procurement", reason=req.reason)
+    except Exception as exc:
+        raise HTTPException(400, str(exc))
+
+
+@router.post("/api/sap/purchase-requisitions/{pr}/convert")
+def sap_request_convert(pr: str, p: Principal = Depends(principal)) -> dict[str, Any]:
+    need(p, "run")
+    _sap()
+    return _rt().call("sap.convert_to_purchase_order", {"requisition": pr}, actor=p.user or "unknown", module="procurement",
+                      reason=f"convert requisition {pr} to a purchase order")
+
+
+# ------------------------------------------------------------------ Salesforce (mock or Developer Edition)
+def _sf() -> Any:
+    sf = getattr(_rt(), "salesforce", None)
+    if sf is None:
+        raise HTTPException(404, "Salesforce connector is off (AERONEXUS_FF_SALESFORCE=mock or live)")
+    return sf
+
+
+@router.get("/api/salesforce/accounts")
+def sf_accounts(query: str = "", part_number: str = "", p: Principal = Depends(principal)) -> list[dict[str, Any]]:
+    need(p, "read")
+    _sf()
+    return _rt().call("sf.find_accounts", {"query": query, "part_number": part_number}, actor=p.user or "unknown")["result"]
+
+
+class CaseRequest(BaseModel):
+    account_id: str = Field(min_length=3, max_length=40)
+    subject: str = Field(min_length=3, max_length=255)
+    description: str = Field(default="", max_length=4000)
+    priority: str = Field(default="Medium", pattern="^(Low|Medium|High)$")
+
+
+@router.post("/api/salesforce/cases")
+def sf_request_case(req: CaseRequest, p: Principal = Depends(principal)) -> dict[str, Any]:
+    need(p, "run")
+    _sf()
+    return _rt().call("sf.create_case", req.model_dump(), actor=p.user or "unknown", module="crm", reason=req.subject)
+
+
+# ------------------------------------------------------------------ Databricks feature pipeline
+class DatabricksRun(BaseModel):
+    subset: str = Field(default="FD001", pattern="^FD00[1-4]$")
+
+
+@router.post("/api/integrations/databricks/run")
+def databricks_run(req: DatabricksRun, p: Principal = Depends(principal)) -> dict[str, Any]:
+    from ..pipelines import databricks as db
+    from .audit import audit_log
+
+    need(p, "admin")
+    if not db.enabled():
+        raise HTTPException(404, "Databricks integration is off (AERONEXUS_FF_DATABRICKS=1)")
+    try:
+        out = db.run_now(req.subset)
+    except Exception as exc:
+        raise HTTPException(502, f"Databricks: {exc}")
+    audit_log().append("databricks_run", p.user or "admin", subset=req.subset, run_id=out.get("run_id"))
+    return out
+
+
+@router.get("/api/integrations/databricks/runs/{run_id}")
+def databricks_run_status(run_id: int, p: Principal = Depends(principal)) -> dict[str, Any]:
+    from ..pipelines import databricks as db
+
+    need(p, "read")
+    try:
+        return db.run_status(run_id)
+    except Exception as exc:
+        raise HTTPException(502, f"Databricks: {exc}")

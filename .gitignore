@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+frontend/dist/
+backend/models/*
+!backend/models/.gitkeep
+backend/data/train/
+.env
+*.ipynb_checkpoints
+backend/data/public/
+backend/data/state.db
+# local run state (runs, saved workflows, experiment tracking, eval history)
+backend/data/runs/
+backend/data/workflows/
+backend/data/mlflow.db
+backend/data/reports/history/
+mlruns/
+backend/data/integrations/
+.env
+.env.*
+!.env.example

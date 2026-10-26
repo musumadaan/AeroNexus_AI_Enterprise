@@ -1,0 +1,233 @@
+[
+ {
+  "id": "CLM-DRAW-1",
+  "module": "quote",
+  "source_type": "preprint",
+  "year": 2026,
+  "claim": "On real construction drawings, state-of-the-art multimodal LLMs show a substantial gap versus experts, largest at higher reasoning depths.",
+  "evidence": "substantial gap between model and expert performance, particularly at higher reasoning depths",
+  "source_title": "DrawingVQA: Multi-Depth Visual-Textual Reasoning on Construction Drawings (arXiv 2607.15418)",
+  "url": "https://www.alphaxiv.org/abs/2607.15418",
+  "how_used": "Why drawings are not sent straight to a general VLM: rules/NER first, VLM fallback, human review on low confidence."
+ },
+ {
+  "id": "CLM-DRAW-2",
+  "module": "quote",
+  "source_type": "peer-reviewed (ICML 2026)",
+  "year": 2026,
+  "claim": "A domain-specialized model trained on MechVQA beats the strongest closed-source baseline by 7.57 points.",
+  "evidence": "MechVL outperforms the strongest closed-source baseline by 7.57 percentage points",
+  "source_title": "MechVQA: Benchmarking and Enhancing Multimodal LLMs on Mechanical Drawing Understanding (arXiv 2605.30794)",
+  "url": "https://www.emergentmind.com/papers/2605.30794",
+  "how_used": "Motivates the LoRA fine-tune in notebooks/02_vlm_lora.ipynb."
+ },
+ {
+  "id": "CLM-DRAW-3",
+  "module": "datasets",
+  "source_type": "dataset card",
+  "year": 2026,
+  "claim": "MechVQA contains 3.3K drawings with 21K question-answer pairs and is published under Apache-2.0.",
+  "evidence": "3.3k high-density pictures with 21K question-answer pairs; License: apache-2.0",
+  "source_title": "MechVQA dataset card (Hugging Face XiaofengAlg/MechVQA)",
+  "url": "https://huggingface.co/datasets/XiaofengAlg/MechVQA",
+  "how_used": "Primary training/eval set for the drawing VLM."
+ },
+ {
+  "id": "CLM-DRAW-4",
+  "module": "evals",
+  "source_type": "preprint",
+  "year": 2026,
+  "claim": "Token-overlap metrics under-report VLM capability on technical descriptions by 2-6x relative to semantic similarity.",
+  "evidence": "token-overlap metrics under-report model capability on technical descriptions by 2-6x",
+  "source_title": "Enginuity: Vision-Language Understanding of Engineering Diagrams (arXiv 2606.03410)",
+  "url": "https://www.emergentmind.com/papers/2606.03410",
+  "how_used": "Free-text fields are scored with a calibrated judge, not BLEU/ROUGE."
+ },
+ {
+  "id": "CLM-JUDGE-1",
+  "module": "evals",
+  "source_type": "preprint",
+  "year": 2026,
+  "claim": "Across 21 judges, raw exact-match agreement overstates chance-corrected kappa by 33-41 points on MT-Bench.",
+  "evidence": "21 judges ... kappa deflation ... is universal (33--41 pp on MT-Bench)",
+  "source_title": "Reliability without Validity: Evaluation of LLM-as-a-Judge Models (arXiv 2606.19544)",
+  "url": "https://arxiv.org/abs/2606.19544",
+  "how_used": "Judge reliability is reported as Cohen's kappa with bootstrap CI; the kappa-deflation number is shown in the UI."
+ },
+ {
+  "id": "CLM-JUDGE-2",
+  "module": "evals",
+  "source_type": "preprint",
+  "year": 2026,
+  "claim": "High agreement among LLM judges is not evidence of agreement with humans (inter-LLM r about 0.35 vs LLM-human 0.27-0.32).",
+  "evidence": "Inter-LLM agreement exceeds LLM--human agreement (r 0.35 versus 0.27--0.32)",
+  "source_title": "The Geometry of LLM-as-Judge: Why Inter-LLM Consensus Is Not Human Alignment (arXiv 2606.03043)",
+  "url": "https://www.emergentmind.com/papers/2606.03043",
+  "how_used": "The judge is calibrated against human labels, never against other judges."
+ },
+ {
+  "id": "CLM-JUDGE-3",
+  "module": "evals",
+  "source_type": "peer-reviewed (ICML 2026)",
+  "year": 2026,
+  "claim": "Judge-based estimates should be corrected using the judge's sensitivity and specificity measured on a human-labelled calibration set.",
+  "evidence": "Using this calibration dataset, we estimate the judge's sensitivity ... specificity",
+  "source_title": "How to Correctly Report LLM-as-a-Judge Evaluations (ICML 2026 slides)",
+  "url": "https://icml.cc/media/icml-2026/Slides/63607.pdf",
+  "how_used": "metrics.corrected_pass_rate (Rogan-Gladen) in the judge harness."
+ },
+ {
+  "id": "CLM-RAG-1",
+  "module": "rag",
+  "source_type": "peer-reviewed (BioNLP 2026)",
+  "year": 2026,
+  "claim": "In retrieval-augmented QA, only 27-41% of citation pairs were supported at the sentence level.",
+  "evidence": "Only 27-41% of citation pairs are supported at the sentence level",
+  "source_title": "VERICITE: Sentence-Level Citation Faithfulness in Retrieval-Augmented Medical QA",
+  "url": "https://aclanthology.org/people/yixian-ma/",
+  "how_used": "Every generated sentence is checked against the passage it cites (grounding.verify)."
+ },
+ {
+  "id": "CLM-RAG-2",
+  "module": "rag",
+  "source_type": "preprint",
+  "year": 2025,
+  "claim": "Removing the NLI verification step barely changed answer correctness but severely degraded citation quality.",
+  "evidence": "Removing the NLI verification step ... caused severe deterioration in citation quality",
+  "source_title": "VeriCite: Reliable Citations in RAG via Rigorous Verification (arXiv 2510.11394)",
+  "url": "https://arxiv.org/html/2510.11394v1",
+  "how_used": "Optional DeBERTa NLI verifier (AERONEXUS_USE_NLI=1); lexical verifier is the fast default."
+ },
+ {
+  "id": "CLM-ECM-1",
+  "module": "change",
+  "source_type": "peer-reviewed",
+  "year": 2020,
+  "claim": "Engineer-to-order companies still report cost overruns caused by engineering changes.",
+  "evidence": "ETO companies still report cost overruns owing to ECs",
+  "source_title": "Factors affecting EC implementation performance in ETO: Norwegian shipbuilding case studies",
+  "url": "https://www.sintef.no/en/publications/publication/1845083",
+  "how_used": "Problem statement for the change-impact agent."
+ },
+ {
+  "id": "CLM-ECM-2",
+  "module": "change",
+  "source_type": "thesis",
+  "year": 2021,
+  "claim": "Literature and case studies show ETO firms struggle with change impact analysis, data management and coordination.",
+  "evidence": "challenges with ECM, particularly with regard to impact analysis, data management, coordination",
+  "source_title": "Engineering Change Management in the Engineer-to-Order Production Environment (NTNU)",
+  "url": "https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2978358",
+  "how_used": "Why the agent links drawing diffs to ERP orders and CRM accounts automatically."
+ },
+ {
+  "id": "CLM-MRO-1",
+  "module": "mro",
+  "source_type": "peer-reviewed",
+  "year": 2021,
+  "claim": "FAA compliance letters to major carriers show common errors in completing maintenance entries and handling documents.",
+  "evidence": "common errors with the completion of maintenance entries, handling of maintenance documents",
+  "source_title": "Maintenance Errors Common to Major U.S. Certificated Air Carriers (Oklahoma State)",
+  "url": "https://shareok.org/handle/11244/330178",
+  "how_used": "Problem statement for the AD compliance checker."
+ },
+ {
+  "id": "CLM-MRO-2",
+  "module": "mro",
+  "source_type": "peer-reviewed (COLING 2020)",
+  "year": 2020,
+  "claim": "Maintenance logbooks are full of domain terms, abbreviations and non-standard spelling; MaintNet's aviation set has 6,169 entries.",
+  "evidence": "abbreviations, and non-standard spelling ... Aviation Maintenance 6,169",
+  "source_title": "MaintNet: Open-Source Library for Predictive Maintenance Language Resources",
+  "url": "https://aclanthology.org/2020.coling-demos.2",
+  "how_used": "Abbreviation normalisation + fuzzy NER; MaintNet used for NER training."
+ },
+ {
+  "id": "CLM-AP-1",
+  "module": "ap",
+  "source_type": "industry report",
+  "year": 2021,
+  "claim": "About 25% of invoices were flagged for exceptions in an industry AP benchmark.",
+  "evidence": "About 25% of invoices were flagged for exceptions last year",
+  "source_title": "Ardent Partners AP Metrics that Matter 2021 (summary)",
+  "url": "https://www.resourcefulfinancepro.com/articles/ap-benchmarks-2021/",
+  "how_used": "Problem statement; industry figure, not peer-reviewed - treat as directional."
+ },
+ {
+  "id": "CLM-AP-2",
+  "module": "ap",
+  "source_type": "industry report",
+  "year": 2026,
+  "claim": "APQC reports a median of 12,000 invoices per AP FTE per year (3,748 companies).",
+  "evidence": "median of 12,000 invoices processed per accounts payable FTE ... 3,748 companies",
+  "source_title": "AP Automation ROI Benchmarks (Tipalti, citing APQC)",
+  "url": "https://tipalti.com/blog/ap-automation-roi-benchmark/",
+  "how_used": "Throughput baseline for the AP module's ROI estimate."
+ },
+ {
+  "id": "CLM-DATA-1",
+  "module": "datasets",
+  "source_type": "peer-reviewed (ICDAR 2023)",
+  "year": 2023,
+  "claim": "DocILE has 6,680 annotated business documents, 100,000 synthetic and about 932,467 unlabeled documents.",
+  "evidence": "annotated 6,680 ... synthetic 100,000 ... unlabeled 932,467 (Table 2)",
+  "source_title": "DocILE Benchmark for Document Information Localization and Extraction (arXiv 2302.05658)",
+  "url": "https://arxiv.org/pdf/2302.05658",
+  "how_used": "Invoice layout pre-training (non-commercial license: research/portfolio only)."
+ },
+ {
+  "id": "CLM-DATA-2",
+  "module": "datasets",
+  "source_type": "preprint",
+  "year": 2023,
+  "claim": "FATURA comprises 10,000 annotated invoices with 50 distinct layouts.",
+  "evidence": "Comprising 10,000 invoices with 50 distinct layouts",
+  "source_title": "FATURA: A Multi-Layout Invoice Image Dataset (arXiv 2311.11856)",
+  "url": "https://arxiv.org/abs/2311.11856v1",
+  "how_used": "Invoice field extraction training for the AP module."
+ },
+ {
+  "id": "CLM-PDM-1",
+  "module": "pdm",
+  "source_type": "dataset documentation (US Government work)",
+  "year": 2008,
+  "claim": "C-MAPSS FD001 has 100 training and 100 test engine trajectories under one operating condition.",
+  "evidence": "FD001 Train trjectories: 100 Test trajectories: 100 Conditions: ONE",
+  "source_title": "C-MAPSS readme.txt (NASA PCoE data, GitHub mirror used by the fetch script)",
+  "url": "https://raw.githubusercontent.com/edwardzjl/CMAPSSData/master/readme.txt",
+  "how_used": "RUL model training/evaluation; files pinned by SHA-256 in aeronexus/public_data.py."
+ },
+ {
+  "id": "CLM-SAFE-1",
+  "module": "safety",
+  "source_type": "dataset page (NASA)",
+  "year": 2026,
+  "claim": "ASRS narratives are not verified or validated by NASA, so they cannot be treated as confirmed facts.",
+  "evidence": "NASA ASRS does not verify or validate reports",
+  "source_title": "ASRS Database Online",
+  "url": "https://asrs.arc.nasa.gov/search/database.html",
+  "how_used": "ASRS hits are labelled 'unverified report' in retrieval and never counted as confirmed events."
+ },
+ {
+  "id": "CLM-SAFE-2",
+  "module": "safety",
+  "source_type": "data license",
+  "year": 2026,
+  "claim": "OpenSky Network grants only a limited, terminable license to its data.",
+  "evidence": "limited, non-exclusive, non-transferable, non-assignable, and terminable license",
+  "source_title": "OpenSky Network General Terms of Use & Data License Agreement",
+  "url": "https://zenodo.org/records/6325961/files/LICENSE.txt?download=1",
+  "how_used": "Trajectory analytics kept in notebook 07; no OpenSky data shipped in the repo."
+ },
+ {
+  "id": "CLM-SAFE-3",
+  "module": "safety",
+  "source_type": "dataset page (FAA)",
+  "year": 2026,
+  "claim": "The FAA publishes Service Difficulty Reports as one CSV file of all reports per year.",
+  "evidence": "CSV file of all reports for that year",
+  "source_title": "Download Service Difficulty Reports (SDR) by Year",
+  "url": "https://www.faa.gov/av-info/download_SDR",
+  "how_used": "Manual export path: CSVs dropped into data/public/faa_sdr are indexed for retrieval as unverified reports."
+ }
+]

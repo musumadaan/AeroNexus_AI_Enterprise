@@ -1,0 +1,61 @@
+{
+ "accounts": [
+  {
+   "id": "ACC-001",
+   "name": "Prairie Aerostructures Ltd",
+   "email": "rfq@prairie-aero.example",
+   "parts": [
+    "AX1000-B2",
+    "AX1004-B2",
+    "AX1008-B2",
+    "AX1012-B2",
+    "AX1016-B2",
+    "AX1020-B2"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "ACC-002",
+   "name": "Northern Rotorcraft MRO",
+   "email": "planning@northern-rotor.example",
+   "parts": [
+    "AX1001-B2",
+    "AX1005-B2",
+    "AX1009-B2",
+    "AX1013-B2",
+    "AX1017-B2",
+    "AX1021-B2"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "ACC-003",
+   "name": "Bow Valley Air Charter",
+   "email": "maintenance@bowvalley-air.example",
+   "parts": [
+    "AX1002-B2",
+    "AX1006-B2",
+    "AX1010-B2",
+    "AX1014-B2",
+    "AX1018-B2",
+    "AX1022-B2"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "ACC-004",
+   "name": "Summit Avionics Integration",
+   "email": "procurement@summit-avionics.example",
+   "parts": [
+    "AX1003-B2",
+    "AX1007-B2",
+    "AX1011-B2",
+    "AX1015-B2",
+    "AX1019-B2",
+    "AX1023-B2"
+   ],
+   "tier": "C"
+  }
+ ],
+ "opportunities": []
+}

@@ -1,0 +1,22 @@
+# core (everything needed for tests, evals, the demo and training on public data; CPU, offline after fetch)
+fastapi>=0.115
+strawberry-graphql[fastapi]>=0.250
+uvicorn[standard]>=0.30
+httpx>=0.27
+certifi>=2024.2
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+python-multipart>=0.0.9
+pytest>=8
+# orchestration + observability
+langgraph>=1.0
+mlflow-skinny>=3.0
+sqlalchemy>=2.0
+alembic>=1.13
+langfuse>=3.0          # optional export; traces stay local unless LANGFUSE_* keys are set
+# enterprise integration layer (optional; everything below is free)
+mcp>=1.10              # Model Context Protocol server (v1 FastMCP or v2 MCPServer both supported)
+google-auth>=2.30      # Google Sheets tracking / Vertex AI service-account auth (only used when configured)
+requests>=2.31         # transport used by google-auth's token refresh

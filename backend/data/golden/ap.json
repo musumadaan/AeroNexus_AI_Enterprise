@@ -1,0 +1,1356 @@
+{
+ "purchase_orders": [
+  {
+   "po": "450100",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450101",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450102",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450103",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50,
+     "unit_price": 2.4
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450104",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450105",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450106",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450107",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450108",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450109",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100,
+     "unit_price": 85.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450110",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450111",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450112",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450113",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 5,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450114",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450115",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450116",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 10,
+     "unit_price": 85.0
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450117",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450118",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450119",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450120",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100,
+     "unit_price": 41.5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450121",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450122",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450123",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450124",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450125",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450126",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450127",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450128",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20,
+     "unit_price": 85.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450129",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100,
+     "unit_price": 85.0
+    }
+   ]
+  },
+  {
+   "po": "450130",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100,
+     "unit_price": 310.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450131",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450132",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450133",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5,
+     "unit_price": 145.0
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450134",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450135",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5,
+     "unit_price": 310.0
+    }
+   ]
+  },
+  {
+   "po": "450136",
+   "vendor": "Prairie Steel Supply",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100,
+     "unit_price": 41.5
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20,
+     "unit_price": 2.4
+    }
+   ]
+  },
+  {
+   "po": "450137",
+   "vendor": "Foothills Fasteners",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5,
+     "unit_price": 2.4
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100,
+     "unit_price": 145.0
+    }
+   ]
+  },
+  {
+   "po": "450138",
+   "vendor": "Chinook Coatings Inc",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20,
+     "unit_price": 145.0
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50,
+     "unit_price": 41.5
+    }
+   ]
+  },
+  {
+   "po": "450139",
+   "vendor": "Westgate Industrial",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10,
+     "unit_price": 41.5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50,
+     "unit_price": 310.0
+    }
+   ]
+  }
+ ],
+ "goods_receipts": [
+  {
+   "po": "450100",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450101",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450102",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450103",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 50
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450104",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450105",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 7
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 17
+    }
+   ]
+  },
+  {
+   "po": "450107",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450108",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450109",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450110",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 100
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450111",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450112",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450113",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450114",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 47
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "po": "450116",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 10
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450117",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450118",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 50
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450119",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450120",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450121",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 50
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450122",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450123",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 17
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 97
+    }
+   ]
+  },
+  {
+   "po": "450125",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "po": "450126",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450127",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 10
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450128",
+   "lines": [
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 20
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450129",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 5
+    },
+    {
+     "item": "PWD-COAT-SVC",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450130",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450131",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450132",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 7
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 47
+    }
+   ]
+  },
+  {
+   "po": "450134",
+   "lines": [
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450135",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "po": "450136",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 100
+    },
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "po": "450137",
+   "lines": [
+    {
+     "item": "BLT-M20-GALV",
+     "qty": 5
+    },
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "po": "450138",
+   "lines": [
+    {
+     "item": "PLT-A36-6MM",
+     "qty": 20
+    },
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "po": "450139",
+   "lines": [
+    {
+     "item": "GUS-BRKT-8MM",
+     "qty": 10
+    },
+    {
+     "item": "CSP-ARCH-10GA",
+     "qty": 50
+    }
+   ]
+  }
+ ],
+ "invoices": [
+  {
+   "id": "INV-30000",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30000\nPO: 450100\nDATE 2026-10-03\nPLT-A36-6MM QTY 5 @ $145.00\nBLT-M20-GALV QTY 20 @ $2.40\nTOTAL DUE $773.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30001",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30001\nPO: 450101\nDATE 2026-08-01\nPLT-A36-6MM QTY 20 @ $145.00\nPWD-COAT-SVC QTY 20 @ $85.00\nTOTAL DUE $4,600.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30002",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30002\nPO: 450102\nDATE 2026-09-23\nCSP-ARCH-10GA QTY 10 @ $310.00\nPLT-A36-6MM QTY 5 @ $145.00\nTOTAL DUE $3,825.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30003",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30003\nPO: 450103\nDATE 2026-08-06\nBLT-M20-GALV QTY 50 @ $2.40\nGUS-BRKT-8MM QTY 50 @ $41.50\nTOTAL DUE $2,195.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30004",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30004\nPO: 450104\nDATE 2026-08-25\nPWD-COAT-SVC QTY 50 @ $92.65\nPLT-A36-6MM QTY 10 @ $145.00\nTOTAL DUE $6,082.50",
+   "truth": "price_variance"
+  },
+  {
+   "id": "INV-30005",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30005\nPO: 450105\nDATE 2026-08-23\nPLT-A36-6MM QTY 10 @ $145.00\nGUS-BRKT-8MM QTY 20 @ $41.50\nTOTAL DUE $2,280.00",
+   "truth": "qty_variance"
+  },
+  {
+   "id": "INV-30006",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30006\nPO: 450106\nDATE 2026-10-05\nPLT-A36-6MM QTY 100 @ $145.00\nGUS-BRKT-8MM QTY 10 @ $41.50\nTOTAL DUE $14,915.00",
+   "truth": "no_receipt"
+  },
+  {
+   "id": "INV-30007",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30007\nPO: 450106\nDATE 2026-10-05\nPLT-A36-6MM QTY 100 @ $145.00\nGUS-BRKT-8MM QTY 10 @ $41.50\nTOTAL DUE $14,915.00",
+   "truth": "duplicate"
+  },
+  {
+   "id": "INV-30008",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30008\nPO: 990008\nDATE 2026-09-08\nGUS-BRKT-8MM QTY 50 @ $41.50\nPLT-A36-6MM QTY 10 @ $145.00\nTOTAL DUE $3,525.00",
+   "truth": "unknown_po"
+  },
+  {
+   "id": "INV-30009",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30009\nPO: 450109\nDATE 2026-09-27\nPWD-COAT-SVC QTY 100 @ $85.00\nBLT-M20-GALV QTY 10 @ $2.40\nTOTAL DUE $8,524.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30010",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30010\nPO: 450110\nDATE 2026-08-18\nBLT-M20-GALV QTY 100 @ $2.40\nPWD-COAT-SVC QTY 50 @ $85.00\nTOTAL DUE $4,490.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30011",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30011\nPO: 450111\nDATE 2026-08-03\nCSP-ARCH-10GA QTY 5 @ $310.00\nGUS-BRKT-8MM QTY 10 @ $41.50\nTOTAL DUE $1,965.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30012",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30012\nPO: 450112\nDATE 2026-09-20\nPLT-A36-6MM QTY 5 @ $145.00\nCSP-ARCH-10GA QTY 100 @ $310.00\nTOTAL DUE $31,725.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30013",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30013\nPO: 450113\nDATE 2026-09-11\nGUS-BRKT-8MM QTY 5 @ $45.24\nPLT-A36-6MM QTY 10 @ $145.00\nTOTAL DUE $1,676.20",
+   "truth": "price_variance"
+  },
+  {
+   "id": "INV-30014",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30014\nPO: 450114\nDATE 2026-09-09\nPWD-COAT-SVC QTY 50 @ $85.00\nPLT-A36-6MM QTY 5 @ $145.00\nTOTAL DUE $4,975.00",
+   "truth": "qty_variance"
+  },
+  {
+   "id": "INV-30015",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30015\nPO: 450115\nDATE 2026-08-10\nCSP-ARCH-10GA QTY 50 @ $310.00\nBLT-M20-GALV QTY 50 @ $2.40\nTOTAL DUE $15,620.00",
+   "truth": "no_receipt"
+  },
+  {
+   "id": "INV-30016",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30016\nPO: 450115\nDATE 2026-08-10\nCSP-ARCH-10GA QTY 50 @ $310.00\nBLT-M20-GALV QTY 50 @ $2.40\nTOTAL DUE $15,620.00",
+   "truth": "duplicate"
+  },
+  {
+   "id": "INV-30017",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30017\nPO: 990017\nDATE 2026-09-16\nCSP-ARCH-10GA QTY 50 @ $310.00\nPWD-COAT-SVC QTY 20 @ $85.00\nTOTAL DUE $17,200.00",
+   "truth": "unknown_po"
+  },
+  {
+   "id": "INV-30018",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30018\nPO: 450118\nDATE 2026-09-15\nPWD-COAT-SVC QTY 50 @ $85.00\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $19,750.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30019",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30019\nPO: 450119\nDATE 2026-07-13\nCSP-ARCH-10GA QTY 50 @ $310.00\nPWD-COAT-SVC QTY 20 @ $85.00\nTOTAL DUE $17,200.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30020",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30020\nPO: 450120\nDATE 2026-09-21\nGUS-BRKT-8MM QTY 100 @ $41.50\nPLT-A36-6MM QTY 20 @ $145.00\nTOTAL DUE $7,050.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30021",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30021\nPO: 450121\nDATE 2026-10-25\nPLT-A36-6MM QTY 50 @ $145.00\nBLT-M20-GALV QTY 10 @ $2.40\nTOTAL DUE $7,274.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30022",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30022\nPO: 450122\nDATE 2026-10-26\nCSP-ARCH-10GA QTY 5 @ $337.90\nGUS-BRKT-8MM QTY 20 @ $41.50\nTOTAL DUE $2,519.50",
+   "truth": "price_variance"
+  },
+  {
+   "id": "INV-30023",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30023\nPO: 450123\nDATE 2026-07-14\nPWD-COAT-SVC QTY 20 @ $85.00\nCSP-ARCH-10GA QTY 100 @ $310.00\nTOTAL DUE $32,700.00",
+   "truth": "qty_variance"
+  },
+  {
+   "id": "INV-30024",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30024\nPO: 450124\nDATE 2026-07-23\nPWD-COAT-SVC QTY 20 @ $85.00\nBLT-M20-GALV QTY 5 @ $2.40\nTOTAL DUE $1,712.00",
+   "truth": "no_receipt"
+  },
+  {
+   "id": "INV-30025",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30025\nPO: 450124\nDATE 2026-07-23\nPWD-COAT-SVC QTY 20 @ $85.00\nBLT-M20-GALV QTY 5 @ $2.40\nTOTAL DUE $1,712.00",
+   "truth": "duplicate"
+  },
+  {
+   "id": "INV-30026",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30026\nPO: 990026\nDATE 2026-08-07\nBLT-M20-GALV QTY 5 @ $2.40\nPLT-A36-6MM QTY 20 @ $145.00\nTOTAL DUE $2,912.00",
+   "truth": "unknown_po"
+  },
+  {
+   "id": "INV-30027",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30027\nPO: 450127\nDATE 2026-07-13\nPLT-A36-6MM QTY 10 @ $145.00\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $16,950.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30028",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30028\nPO: 450128\nDATE 2026-09-27\nPWD-COAT-SVC QTY 20 @ $85.00\nCSP-ARCH-10GA QTY 100 @ $310.00\nTOTAL DUE $32,700.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30029",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30029\nPO: 450129\nDATE 2026-09-05\nPLT-A36-6MM QTY 5 @ $145.00\nPWD-COAT-SVC QTY 100 @ $85.00\nTOTAL DUE $9,225.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30030",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30030\nPO: 450130\nDATE 2026-07-27\nCSP-ARCH-10GA QTY 100 @ $310.00\nBLT-M20-GALV QTY 5 @ $2.40\nTOTAL DUE $31,012.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30031",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30031\nPO: 450131\nDATE 2026-10-12\nPLT-A36-6MM QTY 100 @ $158.05\nBLT-M20-GALV QTY 5 @ $2.40\nTOTAL DUE $15,817.00",
+   "truth": "price_variance"
+  },
+  {
+   "id": "INV-30032",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30032\nPO: 450132\nDATE 2026-10-28\nGUS-BRKT-8MM QTY 10 @ $41.50\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $15,915.00",
+   "truth": "qty_variance"
+  },
+  {
+   "id": "INV-30033",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30033\nPO: 450133\nDATE 2026-07-26\nPLT-A36-6MM QTY 5 @ $145.00\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $16,225.00",
+   "truth": "no_receipt"
+  },
+  {
+   "id": "INV-30034",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30034\nPO: 450133\nDATE 2026-07-26\nPLT-A36-6MM QTY 5 @ $145.00\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $16,225.00",
+   "truth": "duplicate"
+  },
+  {
+   "id": "INV-30035",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30035\nPO: 990035\nDATE 2026-07-12\nBLT-M20-GALV QTY 20 @ $2.40\nCSP-ARCH-10GA QTY 5 @ $310.00\nTOTAL DUE $1,598.00",
+   "truth": "unknown_po"
+  },
+  {
+   "id": "INV-30036",
+   "vendor": "Prairie Steel Supply",
+   "text": "PRAIRIE STEEL SUPPLY\nINVOICE NO: INV-30036\nPO: 450136\nDATE 2026-07-09\nGUS-BRKT-8MM QTY 100 @ $41.50\nBLT-M20-GALV QTY 20 @ $2.40\nTOTAL DUE $4,198.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30037",
+   "vendor": "Foothills Fasteners",
+   "text": "FOOTHILLS FASTENERS\nINVOICE NO: INV-30037\nPO: 450137\nDATE 2026-10-25\nBLT-M20-GALV QTY 5 @ $2.40\nPLT-A36-6MM QTY 100 @ $145.00\nTOTAL DUE $14,512.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30038",
+   "vendor": "Chinook Coatings Inc",
+   "text": "CHINOOK COATINGS INC\nINVOICE NO: INV-30038\nPO: 450138\nDATE 2026-09-26\nPLT-A36-6MM QTY 20 @ $145.00\nGUS-BRKT-8MM QTY 50 @ $41.50\nTOTAL DUE $4,975.00",
+   "truth": "match"
+  },
+  {
+   "id": "INV-30039",
+   "vendor": "Westgate Industrial",
+   "text": "WESTGATE INDUSTRIAL\nINVOICE NO: INV-30039\nPO: 450139\nDATE 2026-08-19\nGUS-BRKT-8MM QTY 10 @ $41.50\nCSP-ARCH-10GA QTY 50 @ $310.00\nTOTAL DUE $15,915.00",
+   "truth": "match"
+  }
+ ]
+}

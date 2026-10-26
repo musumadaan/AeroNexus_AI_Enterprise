@@ -1,0 +1,460 @@
+{
+ "ads": [
+  {
+   "ad": "2024-07-15",
+   "model": "C172",
+   "component": "magneto",
+   "action": "inspected",
+   "recurring_hours": 500,
+   "text": "SYNTHETIC AD 2024-07-15: Inspect magneto impulse coupling for wear. Repeat every 500 hours time in service."
+  },
+  {
+   "ad": "2023-11-04",
+   "model": "C172",
+   "component": "seat belt",
+   "action": "inspected",
+   "recurring_hours": null,
+   "text": "SYNTHETIC AD 2023-11-04: One-time inspection of front seat belt anchors for cracking."
+  },
+  {
+   "ad": "2025-02-09",
+   "model": "PA28",
+   "component": "fuel pump",
+   "action": "replaced",
+   "recurring_hours": 1000,
+   "text": "SYNTHETIC AD 2025-02-09: Replace electric fuel pump at 1000-hour intervals."
+  },
+  {
+   "ad": "2022-19-03",
+   "model": "PA28",
+   "component": "aileron cable",
+   "action": "inspected",
+   "recurring_hours": 100,
+   "text": "SYNTHETIC AD 2022-19-03: Inspect aileron cables for corrosion every 100 hours."
+  }
+ ],
+ "aircraft": [
+  {
+   "tail": "C-GABC",
+   "model": "C172"
+  },
+  {
+   "tail": "C-FLUX",
+   "model": "C172"
+  },
+  {
+   "tail": "C-GRDL",
+   "model": "PA28"
+  },
+  {
+   "tail": "N512RL",
+   "model": "PA28"
+  },
+  {
+   "tail": "C-FMAD",
+   "model": "C172"
+  }
+ ],
+ "logs": [
+  {
+   "tail": "C-GABC",
+   "date": "2026-01-26",
+   "hours": 2878.8,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-02-09",
+   "hours": 2912.2,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-03-02",
+   "hours": 2930.3,
+   "text": "SEAT BELT inspected IAW AD 2023-11-04, c/w. 2930.3 HRS"
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-03-11",
+   "hours": 2945.5,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-03-20",
+   "hours": 3002.1,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-04-01",
+   "hours": 3054.1,
+   "text": "MAGNETO inspected IAW AD 2024-07-15, c/w. 3054.1 HRS"
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-04-24",
+   "hours": 3065.2,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-05-18",
+   "hours": 3126.8,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-06-01",
+   "hours": 3143.2,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-06-08",
+   "hours": 3172.2,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-06-18",
+   "hours": 3237.8,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GABC",
+   "date": "2026-10-15",
+   "hours": 3237.8,
+   "text": "Annual review. TTAF 3237.8 HRS"
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-01-26",
+   "hours": 2266.6,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-02-10",
+   "hours": 2293.6,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-03-02",
+   "hours": 2357.6,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-03-14",
+   "hours": 2399.6,
+   "text": "100 HR insp c/w. Oil filter rplcd, no defects noted."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-04-09",
+   "hours": 2425.5,
+   "text": "Seat belt inspected per manufacturer bulletin, no defects. 2425.5 HRS"
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-04-25",
+   "hours": 2433.9,
+   "text": "100 HR insp c/w. Oil filter rplcd, no defects noted."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-05-17",
+   "hours": 2476.7,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-05-20",
+   "hours": 2496.6,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-06-08",
+   "hours": 2514.1,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-06-21",
+   "hours": 2567.2,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-06-28",
+   "hours": 2616.2,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-FLUX",
+   "date": "2026-10-15",
+   "hours": 2616.2,
+   "text": "Annual review. TTAF 2616.2 HRS"
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-01-09",
+   "hours": 2818.3,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-01-12",
+   "hours": 2852.7,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-01-27",
+   "hours": 2880.5,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-02-07",
+   "hours": 2927.9,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-03-03",
+   "hours": 2962.1,
+   "text": "Fuel pump replaced per manufacturer bulletin, no defects. 2962.1 HRS"
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-03-10",
+   "hours": 2992.5,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-04-07",
+   "hours": 3033.5,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-04-17",
+   "hours": 3103.1,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-04-20",
+   "hours": 3160.0,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-GRDL",
+   "date": "2026-10-15",
+   "hours": 3160.0,
+   "text": "Annual review. TTAF 3160.0 HRS"
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-01-13",
+   "hours": 2663.7,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-01-23",
+   "hours": 2695.6,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-02-01",
+   "hours": 2756.7,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-02-07",
+   "hours": 2803.1,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-02-19",
+   "hours": 2826.7,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-03-11",
+   "hours": 2901.3,
+   "text": "100 HR insp c/w. Oil filter rplcd, no defects noted."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-04-05",
+   "hours": 2923.4,
+   "text": "R/H main tire worn, replaced tire."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-05-02",
+   "hours": 2976.5,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-05-12",
+   "hours": 3033.4,
+   "text": "Aileron cable inspected per manufacturer bulletin, no defects. 3033.4 HRS"
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-05-24",
+   "hours": 3051.6,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "N512RL",
+   "date": "2026-10-15",
+   "hours": 3051.6,
+   "text": "Annual review. TTAF 3051.6 HRS"
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-01-26",
+   "hours": 2843.7,
+   "text": "MAGNETO inspected IAW AD 2024-07-15, c/w. 2843.7 HRS"
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-02-07",
+   "hours": 2946.6,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-02-13",
+   "hours": 2979.7,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-03-09",
+   "hours": 3055.3,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-03-25",
+   "hours": 3086.7,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-04-18",
+   "hours": 3145.6,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-05-12",
+   "hours": 3200.0,
+   "text": "Inspected exhaust for leaks, none found."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-05-28",
+   "hours": 3233.9,
+   "text": "Brake pads replaced L/H, ops ck ok."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-06-20",
+   "hours": 3290.8,
+   "text": "Vacuum pump chk, within limits."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-07-03",
+   "hours": 3369.6,
+   "text": "Alternator belt adj and ops ck good."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-07-25",
+   "hours": 3397.0,
+   "text": "100 HR insp c/w. Oil filter rplcd, no defects noted."
+  },
+  {
+   "tail": "C-FMAD",
+   "date": "2026-10-15",
+   "hours": 3397.0,
+   "text": "Annual review. TTAF 3397.0 HRS"
+  }
+ ],
+ "truth": [
+  {
+   "tail": "C-GABC",
+   "ad": "2024-07-15",
+   "status": "compliant",
+   "needs_review": false
+  },
+  {
+   "tail": "C-GABC",
+   "ad": "2023-11-04",
+   "status": "compliant",
+   "needs_review": false
+  },
+  {
+   "tail": "C-FLUX",
+   "ad": "2024-07-15",
+   "status": "no_record"
+  },
+  {
+   "tail": "C-FLUX",
+   "ad": "2023-11-04",
+   "status": "compliant",
+   "needs_review": true
+  },
+  {
+   "tail": "C-GRDL",
+   "ad": "2025-02-09",
+   "status": "compliant",
+   "needs_review": true
+  },
+  {
+   "tail": "C-GRDL",
+   "ad": "2022-19-03",
+   "status": "no_record"
+  },
+  {
+   "tail": "N512RL",
+   "ad": "2025-02-09",
+   "status": "no_record"
+  },
+  {
+   "tail": "N512RL",
+   "ad": "2022-19-03",
+   "status": "compliant",
+   "needs_review": true
+  },
+  {
+   "tail": "C-FMAD",
+   "ad": "2024-07-15",
+   "status": "overdue",
+   "needs_review": false
+  },
+  {
+   "tail": "C-FMAD",
+   "ad": "2023-11-04",
+   "status": "no_record"
+  }
+ ]
+}

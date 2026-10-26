@@ -1,0 +1,2 @@
+# optional: run the PySpark feature pipeline locally (needs Java 17+). Databricks Free Edition needs none of this.
+pyspark>=3.5,<5

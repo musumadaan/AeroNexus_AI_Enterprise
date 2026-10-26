@@ -1,0 +1,28 @@
+# One container for Railway: builds the React app, then serves it from the FastAPI process (same origin, so no CORS,
+# and WebSockets work through Railway's proxy). Public data is fetched and checksum-verified, models are trained and the
+# 32-check evaluation gate runs during the build, so a bad model never ships.
+FROM node:22-slim AS web
+WORKDIR /web
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build
+
+FROM python:3.12-slim
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 \
+    AERONEXUS_STATE_DB=/app/state/state.db AERONEXUS_STATIC_DIR=/app/static AERONEXUS_CORS=""
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY backend/ ./
+ARG TRAIN=1
+RUN python scripts/generate_data.py --train 600 \
+ && python scripts/fetch_public_data.py --only cmapss,ntsb \
+ && if [ "$TRAIN" = "1" ] && [ ! -f models/pdm_FD004.joblib ]; then python scripts/train_public_models.py; fi \
+ && AERONEXUS_STATE_DB=:memory: AERONEXUS_MLFLOW=off python -m aeronexus.evals.runner --no-track
+COPY --from=web /web/dist /app/static
+RUN useradd -m app && mkdir -p /app/state /app/data/integrations && chown -R app /app
+USER app
+EXPOSE 8000
+# Railway injects $PORT; mount a Railway volume at /app/state to keep cases, runs and the audit log across deploys
+CMD ["sh", "-c", "uvicorn aeronexus.api:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1 --proxy-headers --forwarded-allow-ips='*'"]

@@ -1,0 +1,3019 @@
+{
+ "generated_at": "2026-10-25T16:18:04",
+ "version": "1.0.0",
+ "extraction": {
+  "n_sheets": 60,
+  "micro": {
+   "precision": 0.9972,
+   "recall": 0.9845,
+   "f1": 0.9908,
+   "tp": 700,
+   "fp": 2,
+   "fn": 11
+  },
+  "per_field": {
+   "drawing_number": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0
+   },
+   "part_number": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0
+   },
+   "title": {
+    "precision": 1.0,
+    "recall": 0.9667,
+    "f1": 0.9831,
+    "tp": 58,
+    "fp": 0,
+    "fn": 2
+   },
+   "revision": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 55,
+    "fp": 0,
+    "fn": 0
+   },
+   "material": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0
+   },
+   "thickness": {
+    "precision": 0.9825,
+    "recall": 0.9333,
+    "f1": 0.9573,
+    "tp": 56,
+    "fp": 1,
+    "fn": 4
+   },
+   "coating": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 35,
+    "fp": 0,
+    "fn": 0
+   },
+   "quantity": {
+    "precision": 1.0,
+    "recall": 0.9455,
+    "f1": 0.972,
+    "tp": 52,
+    "fp": 0,
+    "fn": 3
+   },
+   "diameter": {
+    "precision": 0.9688,
+    "recall": 0.9394,
+    "f1": 0.9538,
+    "tp": 31,
+    "fp": 1,
+    "fn": 2
+   },
+   "length": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0
+   },
+   "tolerance": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0
+   },
+   "standard": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 56,
+    "fp": 0,
+    "fn": 0
+   },
+   "scale": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 57,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "auto_accept_precision": 0.9984,
+  "automation_rate": 0.865,
+  "status_mix": {
+   "auto_accepted": 616,
+   "needs_review": 86,
+   "missing": 78
+  },
+  "calibration": {
+   "ece": 0.0947,
+   "bins": [
+    {
+     "bin": "0.5-0.6",
+     "confidence": 0.5503,
+     "accuracy": 0.9831,
+     "count": 59
+    },
+    {
+     "bin": "0.6-0.7",
+     "confidence": 0.6607,
+     "accuracy": 1.0,
+     "count": 18
+    },
+    {
+     "bin": "0.7-0.8",
+     "confidence": 0.76,
+     "accuracy": 1.0,
+     "count": 5
+    },
+    {
+     "bin": "0.8-0.9",
+     "confidence": 0.8924,
+     "accuracy": 1.0,
+     "count": 49
+    },
+    {
+     "bin": "0.9-1.0",
+     "confidence": 0.9486,
+     "accuracy": 0.9982,
+     "count": 571
+    }
+   ]
+  },
+  "slices": {
+   "clean": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 413,
+    "fp": 0,
+    "fn": 0
+   },
+   "dropped_field": {
+    "precision": 1.0,
+    "recall": 0.9734,
+    "f1": 0.9865,
+    "tp": 183,
+    "fp": 0,
+    "fn": 5
+   },
+   "injection": {
+    "precision": 1.0,
+    "recall": 0.9167,
+    "f1": 0.9565,
+    "tp": 22,
+    "fp": 0,
+    "fn": 2
+   },
+   "ocr_noise": {
+    "precision": 0.9692,
+    "recall": 0.875,
+    "f1": 0.9197,
+    "tp": 63,
+    "fp": 2,
+    "fn": 9
+   },
+   "conflict": {
+    "precision": 0.9859,
+    "recall": 0.9722,
+    "f1": 0.979,
+    "tp": 70,
+    "fp": 1,
+    "fn": 2
+   },
+   "moved_title": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 45,
+    "fp": 0,
+    "fn": 0
+   }
+  },
+  "failures": [
+   {
+    "sheet_id": "G0003",
+    "field": "title",
+    "predicted": null,
+    "truth": "LANDING GEAR SUPPORT PLATE",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "injection",
+     "dropped_field"
+    ],
+    "cause": "blocked: prompt-injection on sheet",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0005",
+    "field": "title",
+    "predicted": null,
+    "truth": "FLAP TRACK FITTING",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "injection"
+    ],
+    "cause": "blocked: prompt-injection on sheet",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0007",
+    "field": "thickness",
+    "predicted": "11 mm",
+    "truth": "10 mm",
+    "confidence": 0.57,
+    "status": "needs_review",
+    "source": "regex",
+    "tags": [
+     "ocr_noise",
+     "conflict"
+    ],
+    "cause": "OCR changed the number",
+    "token_ids": [
+     "t50",
+     "t51"
+    ]
+   },
+   {
+    "sheet_id": "G0007",
+    "field": "quantity",
+    "predicted": null,
+    "truth": "120",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise",
+     "conflict"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0014",
+    "field": "thickness",
+    "predicted": null,
+    "truth": "12 mm",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0015",
+    "field": "thickness",
+    "predicted": null,
+    "truth": "10 ga",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0015",
+    "field": "quantity",
+    "predicted": null,
+    "truth": "40",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0015",
+    "field": "diameter",
+    "predicted": null,
+    "truth": "18 mm",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0017",
+    "field": "thickness",
+    "predicted": null,
+    "truth": "10 mm",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   },
+   {
+    "sheet_id": "G0022",
+    "field": "diameter",
+    "predicted": "15 mm",
+    "truth": "16 mm",
+    "confidence": 0.97,
+    "status": "auto_accepted",
+    "source": "regex",
+    "tags": [
+     "ocr_noise"
+    ],
+    "cause": "OCR changed the number",
+    "token_ids": [
+     "t32"
+    ]
+   },
+   {
+    "sheet_id": "G0030",
+    "field": "quantity",
+    "predicted": null,
+    "truth": "120",
+    "confidence": 0.0,
+    "status": "missing",
+    "source": "none",
+    "tags": [
+     "ocr_noise"
+    ],
+    "cause": "OCR damaged the text",
+    "token_ids": []
+   }
+  ],
+  "per_sheet": [
+   {
+    "sheet_id": "G0000",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 91.99
+   },
+   {
+    "sheet_id": "G0001",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 1.19
+   },
+   {
+    "sheet_id": "G0002",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.88
+   },
+   {
+    "sheet_id": "G0003",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "injection",
+     "dropped_field"
+    ],
+    "latency_ms": 1.05
+   },
+   {
+    "sheet_id": "G0004",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.99
+   },
+   {
+    "sheet_id": "G0005",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "injection"
+    ],
+    "latency_ms": 0.95
+   },
+   {
+    "sheet_id": "G0006",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.88
+   },
+   {
+    "sheet_id": "G0007",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "ocr_noise",
+     "conflict"
+    ],
+    "latency_ms": 1.1
+   },
+   {
+    "sheet_id": "G0008",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.03
+   },
+   {
+    "sheet_id": "G0009",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.89
+   },
+   {
+    "sheet_id": "G0010",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.97
+   },
+   {
+    "sheet_id": "G0011",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "moved_title",
+     "dropped_field"
+    ],
+    "latency_ms": 0.86
+   },
+   {
+    "sheet_id": "G0012",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.93
+   },
+   {
+    "sheet_id": "G0013",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.9
+   },
+   {
+    "sheet_id": "G0014",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "latency_ms": 0.82
+   },
+   {
+    "sheet_id": "G0015",
+    "correct": 9,
+    "total": 13,
+    "tags": [
+     "ocr_noise",
+     "dropped_field"
+    ],
+    "latency_ms": 0.86
+   },
+   {
+    "sheet_id": "G0016",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.79
+   },
+   {
+    "sheet_id": "G0017",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "ocr_noise"
+    ],
+    "latency_ms": 0.85
+   },
+   {
+    "sheet_id": "G0018",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "moved_title",
+     "conflict",
+     "dropped_field"
+    ],
+    "latency_ms": 0.99
+   },
+   {
+    "sheet_id": "G0019",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.89
+   },
+   {
+    "sheet_id": "G0020",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.93
+   },
+   {
+    "sheet_id": "G0021",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.8
+   },
+   {
+    "sheet_id": "G0022",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "ocr_noise"
+    ],
+    "latency_ms": 0.89
+   },
+   {
+    "sheet_id": "G0023",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.12
+   },
+   {
+    "sheet_id": "G0024",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.97
+   },
+   {
+    "sheet_id": "G0025",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.91
+   },
+   {
+    "sheet_id": "G0026",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "moved_title",
+     "conflict"
+    ],
+    "latency_ms": 1.08
+   },
+   {
+    "sheet_id": "G0027",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "conflict"
+    ],
+    "latency_ms": 0.97
+   },
+   {
+    "sheet_id": "G0028",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.87
+   },
+   {
+    "sheet_id": "G0029",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.05
+   },
+   {
+    "sheet_id": "G0030",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "ocr_noise"
+    ],
+    "latency_ms": 1.02
+   },
+   {
+    "sheet_id": "G0031",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.95
+   },
+   {
+    "sheet_id": "G0032",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.94
+   },
+   {
+    "sheet_id": "G0033",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 1.02
+   },
+   {
+    "sheet_id": "G0034",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.07
+   },
+   {
+    "sheet_id": "G0035",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.96
+   },
+   {
+    "sheet_id": "G0036",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "moved_title"
+    ],
+    "latency_ms": 0.99
+   },
+   {
+    "sheet_id": "G0037",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.91
+   },
+   {
+    "sheet_id": "G0038",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.91
+   },
+   {
+    "sheet_id": "G0039",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.84
+   },
+   {
+    "sheet_id": "G0040",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.99
+   },
+   {
+    "sheet_id": "G0041",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.9
+   },
+   {
+    "sheet_id": "G0042",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.37
+   },
+   {
+    "sheet_id": "G0043",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.98
+   },
+   {
+    "sheet_id": "G0044",
+    "correct": 13,
+    "total": 13,
+    "tags": [
+     "conflict"
+    ],
+    "latency_ms": 1.07
+   },
+   {
+    "sheet_id": "G0045",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.87
+   },
+   {
+    "sheet_id": "G0046",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.01
+   },
+   {
+    "sheet_id": "G0047",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.93
+   },
+   {
+    "sheet_id": "G0048",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.93
+   },
+   {
+    "sheet_id": "G0049",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.08
+   },
+   {
+    "sheet_id": "G0050",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.85
+   },
+   {
+    "sheet_id": "G0051",
+    "correct": 11,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.86
+   },
+   {
+    "sheet_id": "G0052",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.95
+   },
+   {
+    "sheet_id": "G0053",
+    "correct": 11,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.92
+   },
+   {
+    "sheet_id": "G0054",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 1.12
+   },
+   {
+    "sheet_id": "G0055",
+    "correct": 13,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.89
+   },
+   {
+    "sheet_id": "G0056",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.96
+   },
+   {
+    "sheet_id": "G0057",
+    "correct": 12,
+    "total": 13,
+    "tags": [
+     "conflict",
+     "dropped_field"
+    ],
+    "latency_ms": 1.21
+   },
+   {
+    "sheet_id": "G0058",
+    "correct": 10,
+    "total": 13,
+    "tags": [
+     "dropped_field"
+    ],
+    "latency_ms": 0.88
+   },
+   {
+    "sheet_id": "G0059",
+    "correct": 12,
+    "total": 13,
+    "tags": [],
+    "latency_ms": 0.89
+   }
+  ],
+  "latency_ms": {
+   "p50": 0.95,
+   "p95": 1.19,
+   "mean": 2.48
+  },
+  "llm_calls_per_sheet": 0.967,
+  "confidence_values": [
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.96,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.95,
+   0.95,
+   0.95,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.57,
+   0.9,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.665,
+   0.807,
+   0.55,
+   0.651,
+   0.644,
+   0.95,
+   0.93,
+   0.97,
+   0.94,
+   0.665,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.92,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.9,
+   0.93,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.665,
+   0.807,
+   0.55,
+   0.651,
+   0.644,
+   0.76,
+   0.686,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.665,
+   0.807,
+   0.55,
+   0.651,
+   0.644,
+   0.76,
+   0.9,
+   0.686,
+   0.93,
+   0.97,
+   0.94,
+   0.665,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.76,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.96,
+   0.93,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.9,
+   0.96,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.665,
+   0.807,
+   0.55,
+   0.651,
+   0.644,
+   0.95,
+   0.686,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.665,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.96,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.76,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.92,
+   0.95,
+   0.9,
+   0.98,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.92,
+   0.76,
+   0.9,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.93,
+   0.97,
+   0.94,
+   0.95,
+   0.95,
+   0.95,
+   0.55,
+   0.93,
+   0.9,
+   0.95,
+   0.98,
+   0.97,
+   0.93,
+   0.97,
+   0.94,
+   0.95
+  ]
+ },
+ "retrieval": {
+  "recall_at_3": 0.9375,
+  "mrr": 0.9375,
+  "queries": [
+   {
+    "query": "is type II anodize allowed on stainless or titanium parts",
+    "expected": "surface_treatment_guide",
+    "rank": 1,
+    "top": [
+     "surface_treatment_guide",
+     "quoting_policy",
+     "surface_treatment_guide"
+    ]
+   },
+   {
+    "query": "passivation of SS 304 per AMS 2700",
+    "expected": "surface_treatment_guide",
+    "rank": 1,
+    "top": [
+     "surface_treatment_guide",
+     "quoting_policy",
+     "evaluation_glossary"
+    ]
+   },
+   {
+    "query": "which fields are required before issuing a quote",
+    "expected": "quoting_policy",
+    "rank": 1,
+    "top": [
+     "quoting_policy",
+     "surface_treatment_guide",
+     "ad_compliance_procedure"
+    ]
+   },
+   {
+    "query": "approval needed for quotes above 25000 dollars",
+    "expected": "quoting_policy",
+    "rank": 1,
+    "top": [
+     "quoting_policy",
+     "evaluation_glossary",
+     "change_management_procedure"
+    ]
+   },
+   {
+    "query": "general tolerance plus or minus 0.5 mm laser cut plate",
+    "expected": "tolerancing_guide",
+    "rank": 1,
+    "top": [
+     "tolerancing_guide",
+     "tolerancing_guide",
+     "ad_compliance_procedure"
+    ]
+   },
+   {
+    "query": "ASME Y14.5 dimensioning standard",
+    "expected": "tolerancing_guide",
+    "rank": 1,
+    "top": [
+     "tolerancing_guide",
+     "tolerancing_guide",
+     "tolerancing_guide"
+    ]
+   },
+   {
+    "query": "TI-6AL-4V engine mount lead time",
+    "expected": "material_selection",
+    "rank": 1,
+    "top": [
+     "material_selection",
+     "change_management_procedure",
+     "ad_compliance_procedure"
+    ]
+   },
+   {
+    "query": "7075-T6 wing landing gear fittings strength",
+    "expected": "material_selection",
+    "rank": 1,
+    "top": [
+     "material_selection",
+     "surface_treatment_guide",
+     "material_selection"
+    ]
+   },
+   {
+    "query": "recurring airworthiness directive due again",
+    "expected": "ad_compliance_procedure",
+    "rank": 1,
+    "top": [
+     "ad_compliance_procedure",
+     "ad_compliance_procedure",
+     "ad_compliance_procedure"
+    ]
+   },
+   {
+    "query": "logbook entry counts as compliance evidence",
+    "expected": "ad_compliance_procedure",
+    "rank": 1,
+    "top": [
+     "ad_compliance_procedure",
+     "predictive_maintenance_policy",
+     "ad_compliance_procedure"
+    ]
+   },
+   {
+    "query": "duplicate invoice same vendor purchase order total",
+    "expected": "ap_matching_policy",
+    "rank": null,
+    "top": [
+     "ap_matching_policy_v2",
+     "vendor_note_untrusted",
+     "change_management_procedure"
+    ]
+   },
+   {
+    "query": "engineering change order issued after change board approval",
+    "expected": "change_management_procedure",
+    "rank": 1,
+    "top": [
+     "change_management_procedure",
+     "change_management_procedure",
+     "change_management_procedure"
+    ]
+   },
+   {
+    "query": "inspection work order remaining useful life lower bound",
+    "expected": "predictive_maintenance_policy",
+    "rank": 1,
+    "top": [
+     "predictive_maintenance_policy",
+     "tolerancing_guide",
+     "safety_reporting_guide"
+    ]
+   },
+   {
+    "query": "ASRS reports not verified statistically representative",
+    "expected": "safety_reporting_guide",
+    "rank": 1,
+    "top": [
+     "safety_reporting_guide",
+     "safety_reporting_guide",
+     "material_selection"
+    ]
+   },
+   {
+    "query": "what does cohen's kappa measure",
+    "expected": "evaluation_glossary",
+    "rank": 1,
+    "top": [
+     "evaluation_glossary",
+     "change_management_procedure",
+     "safety_reporting_guide"
+    ]
+   },
+   {
+    "query": "expected calibration error meaning",
+    "expected": "evaluation_glossary",
+    "rank": 1,
+    "top": [
+     "evaluation_glossary",
+     "evaluation_glossary",
+     "change_management_procedure"
+    ]
+   }
+  ],
+  "injection_quarantined": true,
+  "revision_aware": true,
+  "contradiction_detected": true,
+  "contradictions": [
+   {
+    "a": {
+     "chunk": "ap_matching_policy#s1c0",
+     "text": "Unit price variance up to 2 percent is accepted automatically.",
+     "revision": "1",
+     "effective": "2024-01-01"
+    },
+    "b": {
+     "chunk": "ap_matching_policy_v2#s0c0",
+     "text": "From July 2026, unit price variance up to 1.5 percent is accepted automatically.",
+     "revision": "2",
+     "effective": "2026-07-01"
+    },
+    "overlap": 1.0,
+    "prefer": "ap_matching_policy_v2#s0c0"
+   }
+  ]
+ },
+ "grounding": {
+  "decisions": {
+   "pass": 4,
+   "abstain": 1
+  },
+  "rows": [
+   {
+    "question": "Can titanium parts be Type II anodized?",
+    "answer": "Steel, stainless steel and titanium parts are not Type II anodized [c:surface_treatment_guide#s0c0]. Aerospace aluminum, stainless and titanium parts are never hot-dip galvanized [c:surface_treatment_guide#s3c0].",
+    "decision": "pass",
+    "groundedness": 1.0,
+    "answerable": true
+   },
+   {
+    "question": "When is a recurring airworthiness directive overdue?",
+    "answer": "Treat a recurring AD as due soon when less than 10 percent of the interval remains [c:ad_compliance_procedure#s2c0].",
+    "decision": "pass",
+    "groundedness": 1.0,
+    "answerable": true
+   },
+   {
+    "question": "When must an inspection work order be opened?",
+    "answer": "Open an inspection work order when the 90 percent lower bound of predicted remaining useful life is 30 cycles or less, or when the engine health score exceeds the anomaly threshold [c:predictive_maintenance_policy#s0c0]. Each work order must reference the model version, the prediction interval and the sensor trend that triggered it [c:predictive_maintenance_policy#s2c0].",
+    "decision": "pass",
+    "groundedness": 1.0,
+    "answerable": true
+   },
+   {
+    "question": "Who must approve quotes above 25000 dollars?",
+    "answer": "Quotes above 25000 dollars require estimating manager approval [c:quoting_policy#s3c0].",
+    "decision": "pass",
+    "groundedness": 1.0,
+    "answerable": true
+   },
+   {
+    "question": "What is the warranty period for landing gear?",
+    "answer": "The available sources don't mention warranty, so I can't answer that reliably.",
+    "decision": "abstain",
+    "groundedness": 1.0,
+    "answerable": false
+   }
+  ],
+  "abstention_accuracy": 1.0,
+  "mean_groundedness_answered": 1.0
+ },
+ "change": {
+  "field_change": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "tp": 20,
+   "fp": 0,
+   "fn": 0
+  },
+  "severity_accuracy": 1.0,
+  "rows": [
+   {
+    "id": "CH000",
+    "case": "CHA-57aee1d8",
+    "truth": [
+     "thickness"
+    ],
+    "pred": [
+     "thickness"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 703.42,
+    "lead_time_days": 19
+   },
+   {
+    "id": "CH001",
+    "case": "CHA-7a31e5c6",
+    "truth": [
+     "material"
+    ],
+    "pred": [
+     "material"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 4320.0,
+    "lead_time_days": 71
+   },
+   {
+    "id": "CH002",
+    "case": "CHA-705d6e34",
+    "truth": [
+     "length"
+    ],
+    "pred": [
+     "length"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 310.56,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH003",
+    "case": "CHA-ce07e625",
+    "truth": [],
+    "pred": [],
+    "severity_truth": "low",
+    "severity_pred": "low",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH004",
+    "case": "CHA-7669dd64",
+    "truth": [
+     "coating"
+    ],
+    "pred": [
+     "coating"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 582.62,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH005",
+    "case": "CHA-faf91c68",
+    "truth": [
+     "quantity"
+    ],
+    "pred": [
+     "quantity"
+    ],
+    "severity_truth": "medium",
+    "severity_pred": "medium",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH006",
+    "case": "CHA-f0382af2",
+    "truth": [
+     "thickness"
+    ],
+    "pred": [
+     "thickness"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 228.12,
+    "lead_time_days": 19
+   },
+   {
+    "id": "CH007",
+    "case": "CHA-4b7a998c",
+    "truth": [
+     "material"
+    ],
+    "pred": [
+     "material"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 4320.0,
+    "lead_time_days": 71
+   },
+   {
+    "id": "CH008",
+    "case": "CHA-f3641990",
+    "truth": [
+     "length"
+    ],
+    "pred": [
+     "length"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 1087.11,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH009",
+    "case": "CHA-1b9dfcf8",
+    "truth": [],
+    "pred": [],
+    "severity_truth": "low",
+    "severity_pred": "low",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH010",
+    "case": "CHA-2da1de34",
+    "truth": [
+     "coating"
+    ],
+    "pred": [
+     "coating"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": -38.88,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH011",
+    "case": "CHA-59a4f2b4",
+    "truth": [
+     "quantity"
+    ],
+    "pred": [
+     "quantity"
+    ],
+    "severity_truth": "medium",
+    "severity_pred": "medium",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH012",
+    "case": "CHA-ecb786ae",
+    "truth": [
+     "thickness"
+    ],
+    "pred": [
+     "thickness"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 703.42,
+    "lead_time_days": 19
+   },
+   {
+    "id": "CH013",
+    "case": "CHA-36d008c0",
+    "truth": [
+     "material"
+    ],
+    "pred": [
+     "material"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 4320.0,
+    "lead_time_days": 71
+   },
+   {
+    "id": "CH014",
+    "case": "CHA-df2ad880",
+    "truth": [
+     "length"
+    ],
+    "pred": [
+     "length"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 310.56,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH015",
+    "case": "CHA-11351291",
+    "truth": [],
+    "pred": [],
+    "severity_truth": "low",
+    "severity_pred": "low",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH016",
+    "case": "CHA-5df81661",
+    "truth": [
+     "coating"
+    ],
+    "pred": [
+     "coating"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 582.62,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH017",
+    "case": "CHA-75a77457",
+    "truth": [
+     "quantity"
+    ],
+    "pred": [
+     "quantity"
+    ],
+    "severity_truth": "medium",
+    "severity_pred": "medium",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH018",
+    "case": "CHA-1ee49257",
+    "truth": [
+     "thickness"
+    ],
+    "pred": [
+     "thickness"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 228.12,
+    "lead_time_days": 19
+   },
+   {
+    "id": "CH019",
+    "case": "CHA-587f1a89",
+    "truth": [
+     "material"
+    ],
+    "pred": [
+     "material"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": 4320.0,
+    "lead_time_days": 71
+   },
+   {
+    "id": "CH020",
+    "case": "CHA-e430b37d",
+    "truth": [
+     "length"
+    ],
+    "pred": [
+     "length"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "critical",
+    "status": "verified",
+    "cost_total": 1087.11,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH021",
+    "case": "CHA-b3e85d41",
+    "truth": [],
+    "pred": [],
+    "severity_truth": "low",
+    "severity_pred": "low",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH022",
+    "case": "CHA-ed05407a",
+    "truth": [
+     "coating"
+    ],
+    "pred": [
+     "coating"
+    ],
+    "severity_truth": "high",
+    "severity_pred": "high",
+    "status": "verified",
+    "cost_total": -38.88,
+    "lead_time_days": 5
+   },
+   {
+    "id": "CH023",
+    "case": "CHA-1877a7b5",
+    "truth": [
+     "quantity"
+    ],
+    "pred": [
+     "quantity"
+    ],
+    "severity_truth": "medium",
+    "severity_pred": "medium",
+    "status": "verified",
+    "cost_total": 0.0,
+    "lead_time_days": 5
+   }
+  ],
+  "receipt_reproducibility": 1.0,
+  "replay_identical": 1.0,
+  "status_mix": {
+   "verified": 24
+  },
+  "provenance": "synthetic revision pairs"
+ },
+ "pdm": {
+  "available": true,
+  "provenance": "public real dataset (NASA C-MAPSS, simulated engines)",
+  "subsets": {
+   "FD001": {
+    "test_rmse_capped": 12.187,
+    "test_rmse_uncapped": 13.459,
+    "test_phm_score": 225.6,
+    "interval_coverage_test": 0.84,
+    "health_index_auroc_early_vs_late": 0.9948,
+    "selected_model": "gbt",
+    "validation_rmse": {
+     "mean_baseline": 43.119,
+     "gbt": 10.112,
+     "mlp": 11.764
+    }
+   },
+   "FD002": {
+    "test_rmse_capped": 12.954,
+    "test_rmse_uncapped": 25.645,
+    "test_phm_score": 794.7,
+    "interval_coverage_test": 0.9035,
+    "health_index_auroc_early_vs_late": 0.99,
+    "selected_model": "gbt",
+    "validation_rmse": {
+     "mean_baseline": 42.253,
+     "gbt": 14.35,
+     "mlp": 15.77
+    }
+   },
+   "FD003": {
+    "test_rmse_capped": 13.454,
+    "test_rmse_uncapped": 14.725,
+    "test_phm_score": 407.5,
+    "interval_coverage_test": 0.82,
+    "health_index_auroc_early_vs_late": 0.94,
+    "selected_model": "mlp",
+    "validation_rmse": {
+     "mean_baseline": 45.917,
+     "gbt": 10.471,
+     "mlp": 10.272
+    }
+   },
+   "FD004": {
+    "test_rmse_capped": 13.412,
+    "test_rmse_uncapped": 25.874,
+    "test_phm_score": 818.9,
+    "interval_coverage_test": 0.9274,
+    "health_index_auroc_early_vs_late": 0.9955,
+    "selected_model": "gbt",
+    "validation_rmse": {
+     "mean_baseline": 40.877,
+     "gbt": 14.167,
+     "mlp": 17.119
+    }
+   }
+  },
+  "fd001_rmse": 12.187,
+  "worst_rmse": 13.454,
+  "min_coverage": 0.82,
+  "min_health_auroc": 0.94
+ },
+ "safety": {
+  "available": true,
+  "provenance": "public real dataset (NTSB), temporal split 2008-15 / 2016 / 2017-22",
+  "test_auroc": 0.9221,
+  "test_pr_auc": 0.6641,
+  "test_prevalence": 0.1222,
+  "test_f1": 0.6429,
+  "ece": 0.0174,
+  "leakage_gap": 0.0042,
+  "selective_prediction": [
+   {
+    "abstain_band": 0.0,
+    "coverage": 1.0,
+    "accuracy": 0.9064
+   },
+   {
+    "abstain_band": 0.05,
+    "coverage": 0.9282,
+    "accuracy": 0.918
+   },
+   {
+    "abstain_band": 0.1,
+    "coverage": 0.9234,
+    "accuracy": 0.9187
+   },
+   {
+    "abstain_band": 0.15,
+    "coverage": 0.9234,
+    "accuracy": 0.9187
+   },
+   {
+    "abstain_band": 0.2,
+    "coverage": 0.8572,
+    "accuracy": 0.9199
+   }
+  ],
+  "n_test": 4819
+ },
+ "security": {
+  "checks": [
+   {
+    "role": "viewer",
+    "perm": "read",
+    "expected": true,
+    "actual": true
+   },
+   {
+    "role": "viewer",
+    "perm": "run",
+    "expected": false,
+    "actual": false
+   },
+   {
+    "role": "viewer",
+    "perm": "approve",
+    "expected": false,
+    "actual": false
+   },
+   {
+    "role": "engineer",
+    "perm": "run",
+    "expected": true,
+    "actual": true
+   },
+   {
+    "role": "engineer",
+    "perm": "approve",
+    "expected": false,
+    "actual": false
+   },
+   {
+    "role": "approver",
+    "perm": "approve",
+    "expected": true,
+    "actual": true
+   },
+   {
+    "role": "approver",
+    "perm": "evaluate",
+    "expected": false,
+    "actual": false
+   },
+   {
+    "role": "admin",
+    "perm": "evaluate",
+    "expected": true,
+    "actual": true
+   },
+   {
+    "role": "agent",
+    "perm": "approve",
+    "expected": false,
+    "actual": false
+   }
+  ],
+  "tenant_isolation": true,
+  "pass_rate": 1.0
+ },
+ "mro": {
+  "status_accuracy": 1.0,
+  "implicit_review_recall": 1.0,
+  "n": 10,
+  "rows": [
+   {
+    "tail": "C-GABC",
+    "ad": "2024-07-15",
+    "pred": "compliant",
+    "truth": "compliant",
+    "evidence": "explicit_ad_reference"
+   },
+   {
+    "tail": "C-GABC",
+    "ad": "2023-11-04",
+    "pred": "compliant",
+    "truth": "compliant",
+    "evidence": "explicit_ad_reference"
+   },
+   {
+    "tail": "C-FLUX",
+    "ad": "2024-07-15",
+    "pred": "no_record",
+    "truth": "no_record",
+    "evidence": null
+   },
+   {
+    "tail": "C-FLUX",
+    "ad": "2023-11-04",
+    "pred": "compliant",
+    "truth": "compliant",
+    "evidence": "component_action_match"
+   },
+   {
+    "tail": "C-GRDL",
+    "ad": "2025-02-09",
+    "pred": "compliant",
+    "truth": "compliant",
+    "evidence": "component_action_match"
+   },
+   {
+    "tail": "C-GRDL",
+    "ad": "2022-19-03",
+    "pred": "no_record",
+    "truth": "no_record",
+    "evidence": null
+   },
+   {
+    "tail": "N512RL",
+    "ad": "2025-02-09",
+    "pred": "no_record",
+    "truth": "no_record",
+    "evidence": null
+   },
+   {
+    "tail": "N512RL",
+    "ad": "2022-19-03",
+    "pred": "compliant",
+    "truth": "compliant",
+    "evidence": "component_action_match"
+   },
+   {
+    "tail": "C-FMAD",
+    "ad": "2024-07-15",
+    "pred": "overdue",
+    "truth": "overdue",
+    "evidence": "explicit_ad_reference"
+   },
+   {
+    "tail": "C-FMAD",
+    "ad": "2023-11-04",
+    "pred": "no_record",
+    "truth": "no_record",
+    "evidence": null
+   }
+  ]
+ },
+ "ap": {
+  "accuracy": 1.0,
+  "false_auto_match": 0,
+  "touchless_rate": 0.5,
+  "confusion": {
+   "match": {
+    "match": 20
+   },
+   "price_variance": {
+    "price_variance": 4
+   },
+   "qty_variance": {
+    "qty_variance": 4
+   },
+   "no_receipt": {
+    "no_receipt": 4
+   },
+   "duplicate": {
+    "duplicate": 4
+   },
+   "unknown_po": {
+    "unknown_po": 4
+   }
+  }
+ },
+ "judge": {
+  "n": 160,
+  "human_human_kappa": 0.678,
+  "judge_human_kappa": 0.7499,
+  "judge_human_kappa_ci95": [
+   0.6417,
+   0.8448
+  ],
+  "judge_human_raw_agreement": 0.8812,
+  "kappa_deflation_pp": 13.1,
+  "sensitivity": 0.902,
+  "specificity": 0.8966,
+  "test_pass_rate_observed": 0.5625,
+  "test_pass_rate_corrected": 0.5749,
+  "test_pass_rate_true": 0.625,
+  "position_bias_rate": 0.0,
+  "pairs_tested": 36,
+  "approved_as_gate": true,
+  "verdict": "Judge approved as an automated gate: chance-corrected agreement with humans is close to human-human agreement.",
+  "errors": [
+   {
+    "id": "J009",
+    "response": "The general tolerance is minus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J018",
+    "response": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "reference": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "judge": 1,
+    "human": 0
+   },
+   {
+    "id": "J021",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J023",
+    "response": "Material is ASTM A36 structural steel.",
+    "reference": "Material is ASTM A36 structural steel.",
+    "judge": 1,
+    "human": 0
+   },
+   {
+    "id": "J042",
+    "response": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "reference": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "judge": 1,
+    "human": 0
+   },
+   {
+    "id": "J045",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J057",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J063",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J080",
+    "response": "The title block lists a quantity of 12 pieces.",
+    "reference": "The title block lists a quantity of 12 pieces.",
+    "judge": 1,
+    "human": 0
+   },
+   {
+    "id": "J084",
+    "response": "The arch plate is 12 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "reference": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J090",
+    "response": "The arch plate is 12 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "reference": "The arch plate is 10 gauge (about 3.5 mm) hot-dip galvanized steel.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J099",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J105",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J106",
+    "response": "Parts are hot-dip galvanized after fabrication.",
+    "reference": "Parts are powder coated after fabrication.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J121",
+    "response": "Dimensioning follows ISO 2768 per note 2.",
+    "reference": "Dimensioning follows ASME Y14.5 per note 2.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J129",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J135",
+    "response": "The general tolerance is plus or minus 1.0 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J141",
+    "response": "Per the drawing, the general tolerance is plus or minus 0.5 mm.",
+    "reference": "The general tolerance is plus or minus 0.5 mm.",
+    "judge": 0,
+    "human": 1
+   },
+   {
+    "id": "J146",
+    "response": "Per the drawing, the title block lists a quantity of 12 pieces.",
+    "reference": "The title block lists a quantity of 12 pieces.",
+    "judge": 1,
+    "human": 0
+   }
+  ]
+ },
+ "pricing": {
+  "test_mape": 0.0557,
+  "test_coverage": 0.9033,
+  "target_coverage": 0.9,
+  "n_train": 1800,
+  "n_cal": 600,
+  "n_test": 600
+ },
+ "latency": {
+  "agent.tool": {
+   "count": 112.0,
+   "p50": 0.0012289383448660374,
+   "p95": 0.00206048134714365,
+   "p99": 0.0036492035724222664,
+   "mean": 0.0012820195739290544
+  },
+  "extract.layout": {
+   "count": 108.0,
+   "p50": 0.10733300587162375,
+   "p95": 0.1194436801597476,
+   "p99": 0.12537568458355966,
+   "mean": 0.10786610612369797
+  },
+  "extract.llm_fallback": {
+   "count": 106.0,
+   "p50": 0.21102052414789796,
+   "p95": 0.2580832224339247,
+   "p99": 0.43043479090556547,
+   "mean": 1.0689264844294708
+  },
+  "extract.ner": {
+   "count": 108.0,
+   "p50": 0.4440624616108835,
+   "p95": 0.5662666168063879,
+   "p99": 0.7131612941157078,
+   "mean": 0.45917943417508567
+  },
+  "extract.regex": {
+   "count": 108.0,
+   "p50": 0.07745850598439574,
+   "p95": 0.09102894691750409,
+   "p99": 0.11309367837384354,
+   "mean": 0.07860761898983684
+  },
+  "generate.grounded": {
+   "count": 4.0,
+   "p50": 0.1419169711880386,
+   "p95": 0.16886071534827352,
+   "p99": 0.17210576916113496,
+   "mean": 0.14466699212789536
+  },
+  "generate.verify": {
+   "count": 4.0,
+   "p50": 0.03085401840507984,
+   "p95": 0.054821313824504614,
+   "p99": 0.05663138581439853,
+   "mean": 0.0341667328029871
+  },
+  "llm.call": {
+   "count": 262.0,
+   "p50": 0.07629150059074163,
+   "p95": 2222.794937191065,
+   "p99": 2360.504793598084,
+   "mean": 370.55853860921985
+  },
+  "llm.complete": {
+   "count": 342.0,
+   "p50": 0.10895798914134502,
+   "p95": 2186.3218339742157,
+   "p99": 2350.302606996847,
+   "mean": 283.9601251071357
+  },
+  "module.ap": {
+   "count": 1.0,
+   "p50": 5.048207938671112,
+   "p95": 5.048207938671112,
+   "p99": 5.048207938671112,
+   "mean": 5.048207938671112
+  },
+  "module.change_order": {
+   "count": 24.0,
+   "p50": 3.3972085220739245,
+   "p95": 3.6215982225257903,
+   "p99": 3.9176887657959014,
+   "mean": 3.4487465891288593
+  },
+  "module.mro": {
+   "count": 1.0,
+   "p50": 13.284957967698574,
+   "p95": 13.284957967698574,
+   "p99": 13.284957967698574,
+   "mean": 13.284957967698574
+  },
+  "rag.search": {
+   "count": 25.0,
+   "p50": 0.5213329568505287,
+   "p95": 0.5659085931256413,
+   "p99": 2.370840148068968,
+   "mean": 0.5499750562012196
+  },
+  "step.classify": {
+   "count": 24.0,
+   "p50": 0.061416998505592346,
+   "p95": 0.06336253718473017,
+   "p99": 0.06680765422061086,
+   "mean": 0.06056949981333067
+  },
+  "step.cost": {
+   "count": 24.0,
+   "p50": 0.24406251031905413,
+   "p95": 0.29352494166232646,
+   "p99": 0.5540397914592174,
+   "mean": 0.26268220487205934
+  },
+  "step.diff": {
+   "count": 24.0,
+   "p50": 0.05137501284480095,
+   "p95": 0.057952781207859516,
+   "p99": 0.05927058984525502,
+   "mean": 0.0505036199077343
+  },
+  "step.extract": {
+   "count": 24.0,
+   "p50": 1.9103335216641426,
+   "p95": 2.1159330382943153,
+   "p99": 2.121629035100341,
+   "mean": 1.9402882462600246
+  },
+  "step.impact": {
+   "count": 24.0,
+   "p50": 0.017437501810491085,
+   "p95": 0.046571349957957864,
+   "p99": 0.0589032273273915,
+   "mean": 0.026147705890859168
+  },
+  "step.validate": {
+   "count": 24.0,
+   "p50": 0.00379153061658144,
+   "p95": 0.004708050983026624,
+   "p99": 0.0057028012815862885,
+   "mean": 0.003921925478304426
+  }
+ },
+ "counters": {
+  "llm.escalate.low_conf": 106,
+  "extract.fields.auto": 1192,
+  "extract.fields.review": 134,
+  "extract.crosscheck.label_without_value": 1,
+  "rag.quarantined": 7,
+  "generate.decision.pass": 4,
+  "generate.decision.abstain_uncovered": 1,
+  "case.status.verified": 24,
+  "llm.groq.paced": 45,
+  "llm.cache_hit": 186
+ },
+ "llm_cache": {
+  "hits": 0
+ },
+ "drift": {
+  "confidence_psi_vs_first_half": 0.0316
+ },
+ "provenance": {
+  "extraction": "synthetic golden drawings",
+  "retrieval": "authored KB",
+  "change": "synthetic revision pairs",
+  "mro": "synthetic logbooks",
+  "ap": "synthetic invoices",
+  "judge": "synthetic human labels",
+  "pdm": "public real dataset (NASA C-MAPSS, simulated engines)",
+  "safety": "public real dataset (NTSB), temporal split 2008-15 / 2016 / 2017-22"
+ },
+ "gate": {
+  "passed": true,
+  "checks": [
+   {
+    "metric": "extraction.auto_accept_precision",
+    "value": 0.9984,
+    "op": "ge",
+    "target": 0.99,
+    "passed": true,
+    "why": "Auto-accepted values skip human review; they must almost never be wrong."
+   },
+   {
+    "metric": "extraction.micro.precision",
+    "value": 0.9972,
+    "op": "ge",
+    "target": 0.98,
+    "passed": true,
+    "why": "Wrong values are worse than missing ones (missing \u2192 RFI, wrong \u2192 bad decision)."
+   },
+   {
+    "metric": "extraction.micro.f1",
+    "value": 0.9908,
+    "op": "ge",
+    "target": 0.95,
+    "passed": true,
+    "why": "Overall extraction quality on the frozen golden set (synthetic)."
+   },
+   {
+    "metric": "extraction.calibration.ece",
+    "value": 0.0947,
+    "op": "le",
+    "target": 0.12,
+    "passed": true,
+    "why": "Confidence routing only works if confidence means what it says."
+   },
+   {
+    "metric": "extraction.latency_ms.p95",
+    "value": 1.19,
+    "op": "le",
+    "target": 250,
+    "passed": true,
+    "why": "CPU rules path per sheet (LLM time is budgeted separately)."
+   },
+   {
+    "metric": "retrieval.recall_at_3",
+    "value": 0.9375,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "The right policy/spec passage must be in the top 3."
+   },
+   {
+    "metric": "retrieval.mrr",
+    "value": 0.9375,
+    "op": "ge",
+    "target": 0.8,
+    "passed": true,
+    "why": "...and usually at rank 1."
+   },
+   {
+    "metric": "retrieval.injection_quarantined",
+    "value": true,
+    "op": "eq",
+    "target": true,
+    "passed": true,
+    "why": "Untrusted text that instructs the model must never reach the prompt."
+   },
+   {
+    "metric": "retrieval.revision_aware",
+    "value": true,
+    "op": "eq",
+    "target": true,
+    "passed": true,
+    "why": "Only the policy revision in force on the date may be retrieved."
+   },
+   {
+    "metric": "retrieval.contradiction_detected",
+    "value": true,
+    "op": "eq",
+    "target": true,
+    "passed": true,
+    "why": "Conflicting revisions must be surfaced, not silently merged."
+   },
+   {
+    "metric": "grounding.abstention_accuracy",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.8,
+    "passed": true,
+    "why": "Answer when the sources cover it, abstain when they do not."
+   },
+   {
+    "metric": "grounding.mean_groundedness_answered",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "Answered sentences must be supported by their citations."
+   },
+   {
+    "metric": "change.field_change.f1",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "Detect which engineering fields changed between revisions."
+   },
+   {
+    "metric": "change.severity_accuracy",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "Severity drives who reviews and who is notified."
+   },
+   {
+    "metric": "change.receipt_reproducibility",
+    "value": 1.0,
+    "op": "eq",
+    "target": 1.0,
+    "passed": true,
+    "why": "Every cost/lead-time/severity number must re-compute bit-for-bit."
+   },
+   {
+    "metric": "change.replay_identical",
+    "value": 1.0,
+    "op": "eq",
+    "target": 1.0,
+    "passed": true,
+    "why": "Case state rebuilt from the event log must equal the live state."
+   },
+   {
+    "metric": "mro.status_accuracy",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "AD status correctness on the synthetic fleet."
+   },
+   {
+    "metric": "mro.implicit_review_recall",
+    "value": 1.0,
+    "op": "eq",
+    "target": 1.0,
+    "passed": true,
+    "why": "Safety: evidence without an AD number must ALWAYS go to a human."
+   },
+   {
+    "metric": "ap.accuracy",
+    "value": 1.0,
+    "op": "ge",
+    "target": 0.95,
+    "passed": true,
+    "why": "Three-way match label accuracy."
+   },
+   {
+    "metric": "ap.false_auto_match",
+    "value": 0,
+    "op": "le",
+    "target": 0,
+    "passed": true,
+    "why": "Safety: an exception must never be auto-matched for payment."
+   },
+   {
+    "metric": "pdm.fd001_rmse",
+    "value": 12.187,
+    "op": "le",
+    "target": 16.0,
+    "passed": true,
+    "why": "C-MAPSS FD001 test RMSE (capped at 125) \u2014 real public benchmark."
+   },
+   {
+    "metric": "pdm.worst_rmse",
+    "value": 13.454,
+    "op": "le",
+    "target": 18.0,
+    "passed": true,
+    "why": "No subset may regress badly (FD002/FD004 have 6 operating regimes)."
+   },
+   {
+    "metric": "pdm.min_coverage",
+    "value": 0.82,
+    "op": "ge",
+    "target": 0.8,
+    "passed": true,
+    "why": "Conformal 90% RUL intervals must cover at least 80% on every test subset."
+   },
+   {
+    "metric": "pdm.min_health_auroc",
+    "value": 0.94,
+    "op": "ge",
+    "target": 0.9,
+    "passed": true,
+    "why": "Health score must separate early from late engine life."
+   },
+   {
+    "metric": "safety.test_auroc",
+    "value": 0.9221,
+    "op": "ge",
+    "target": 0.85,
+    "passed": true,
+    "why": "Severity triage on NTSB 2017-22 (trained on 2008-15)."
+   },
+   {
+    "metric": "safety.ece",
+    "value": 0.0174,
+    "op": "le",
+    "target": 0.05,
+    "passed": true,
+    "why": "Triage probabilities must be calibrated to set review priority."
+   },
+   {
+    "metric": "safety.leakage_gap",
+    "value": 0.0042,
+    "op": "le",
+    "target": 0.02,
+    "passed": true,
+    "why": "Masking outcome words must barely change AUROC (model uses causes, not outcome words)."
+   },
+   {
+    "metric": "security.pass_rate",
+    "value": 1.0,
+    "op": "eq",
+    "target": 1.0,
+    "passed": true,
+    "why": "Every RBAC allow/deny and tenant-isolation check must hold."
+   },
+   {
+    "metric": "pricing.test_coverage",
+    "value": 0.9033,
+    "op": "ge",
+    "target": 0.85,
+    "passed": true,
+    "why": "Conformal 90% price intervals must actually cover ~90%."
+   },
+   {
+    "metric": "pricing.test_mape",
+    "value": 0.0557,
+    "op": "le",
+    "target": 0.12,
+    "passed": true,
+    "why": "Typical unit-price error."
+   },
+   {
+    "metric": "judge.n",
+    "value": 160,
+    "op": "ge",
+    "target": 100,
+    "passed": true,
+    "why": "Judge calibration needs a few hundred human labels in production; 100+ here."
+   },
+   {
+    "metric": "drift.confidence_psi_vs_first_half",
+    "value": 0.0316,
+    "op": "le",
+    "target": 0.2,
+    "passed": true,
+    "why": "PSI > 0.2 signals a distribution shift worth investigating."
+   }
+  ]
+ },
+ "duration_s": 98.51
+}
